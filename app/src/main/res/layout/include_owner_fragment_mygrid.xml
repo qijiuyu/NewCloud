@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/owner_course"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_live"
+            android:text="@string/owner_course" />
+
+        <TextView
+            android:id="@+id/owner_note"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_notes"
+            android:text="@string/owner_note" />
+
+        <TextView
+            android:id="@+id/owner_collect"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_collect"
+            android:text="@string/owner_collect" />
+
+        <TextView
+            android:id="@+id/owner_qa"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_qa"
+            android:text="@string/owner_qa" />
+
+    </LinearLayout>
+    <!-- owner_my_ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/owner_exam"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_exam"
+            android:text="@string/owner_exam" />
+
+        <TextView
+            android:id="@+id/owner_group"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_group"
+            android:text="@string/owner_group"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/owner_library"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_library"
+            android:text="@string/owner_library" />
+
+        <TextView
+            android:id="@+id/owner_download"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_download"
+            android:text="@string/owner_download" />
+
+        <TextView
+            android:id="@+id/owner_coupon"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_conpons"
+            android:text="@string/owner_coupon" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/owner_study_recode"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_study"
+            android:text="@string/owner_study_record" />
+
+        <TextView
+            android:id="@+id/owner_exchange_record"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_record"
+            android:text="@string/owner_exchange_record" />
+
+        <TextView
+            android:id="@+id/owner_organization"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/owner_my_org"
+            android:text="@string/owner_organization" />
+
+        <TextView
+            android:id="@+id/owner_more"
+            style="@style/owner_item"
+            android:visibility="gone" />
+        <!--android:drawableTop="@drawable/ic_owner_referrials"-->
+        <TextView
+            android:id="@+id/owner_referrials"
+            style="@style/owner_item"
+            android:drawableTop="@mipmap/ic_owner_referrials"
+            android:text="@string/owner_referrials" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/owner_course_by_teacher"
+            style="@style/owner_item"
+            android:visibility="gone"
+            android:drawableTop="@mipmap/ic_owner_course_by_teacher"
+            android:text="@string/owner_course_by_teacher" />
+
+        <TextView
+            style="@style/owner_item"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/owner_item"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/owner_item"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

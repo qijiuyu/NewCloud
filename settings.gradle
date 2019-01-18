@@ -1,0 +1,5 @@
+include ':app', ':arms', ':vitamio', ':umengutils'
+include ':liveplayer', ':vhutils', ':uilibs'
+include ':cclive', ':faceplatform-ui', ':zshdlib', ':pay'
+include ':cc-small', ':cc-small-library', ':cc-small-scan-library'
+include ':imagepicker'

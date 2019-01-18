@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vhall.live">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+   <!-- android:name=".VhallApplication"-->
+    <application>
+        <!--<activity
+            android:name=".SplashActivity"
+            android:icon="@drawable/icon_vhall"
+
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name=".LoginActivity"
+            android:icon="@drawable/icon_vhall"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/icon_vhall"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".SetParamActivity"
+            android:icon="@drawable/icon_vhall"
+            android:screenOrientation="portrait"/>
+    </application>
+</manifest>

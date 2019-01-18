@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_login_live_root"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/loginBg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="直播间信息"
+        style="@style/loginTipsTheme" />
+
+    <LinearLayout style="@style/loginInfosLayoutTheme">
+
+        <RelativeLayout style="@style/loginLineLayoutTheme">
+            <TextView
+                android:text="CC账号ID"
+                style="@style/loginLineTextViewTheme" />
+            <com.bokecc.dwlivedemo_new.view.LoginLineLayout
+                android:id="@+id/lll_login_live_uid"
+                style="@style/loginLayoutTheme" />
+            <View style="@style/loginLineBottomViewTheme" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/loginLineLayoutTheme">
+            <TextView
+                android:text="直播间ID"
+                style="@style/loginLineTextViewTheme" />
+            <com.bokecc.dwlivedemo_new.view.LoginLineLayout
+                android:id="@+id/lll_login_live_roomid"
+                style="@style/loginLayoutTheme" />
+            <View style="@style/loginLineBottomViewTheme" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/loginLineLayoutTheme">
+            <TextView
+                android:text="昵称"
+                style="@style/loginLineTextViewTheme" />
+
+            <com.bokecc.dwlivedemo_new.view.LoginLineLayout
+                android:id="@+id/lll_login_live_name"
+                style="@style/loginLayoutTheme" />
+            <View style="@style/loginLineBottomViewTheme" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/loginLineLayoutTheme">
+            <TextView
+                android:text="密码"
+                style="@style/loginLineTextViewTheme" />
+            <com.bokecc.dwlivedemo_new.view.LoginLineLayout
+                android:id="@+id/lll_login_live_password"
+                style="@style/loginLayoutTheme" />
+        </RelativeLayout>
+    </LinearLayout>>
+    
+    <Button
+        android:id="@+id/btn_login_live"
+        android:text="登录"
+        style="@style/loginButtonTheme" />
+</LinearLayout>

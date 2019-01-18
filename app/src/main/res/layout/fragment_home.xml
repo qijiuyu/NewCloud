@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.yanzhenjie.sofia.StatusView
+            android:id="@+id/status_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--android:paddingTop="@dimen/activity_top_padding"-->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_10"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/tv_special"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_frame_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    app:srcCompat="@drawable/ic_search"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_course"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/sp_11" />
+            </LinearLayout>
+
+
+            <!--<TextView
+
+                android:id="@+id/tv_special"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_frame_white"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="@string/search_course"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/sp_11" />-->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<com.seition.cloud.pro.newcloud.widget.MySwipeRefreshLayout
+        android:id="@+id/id_swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header">-->
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:type="follow">
+
+
+        <ScrollView
+            android:id="@+id/home_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <!-- <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">-->
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_160"
+                    android:visibility="visible" />
+
+                <com.seition.cloud.pro.newcloud.widget.GridViewNoScroll
+                    android:id="@+id/cate_list"
+                    style="@style/default_gridview_style"
+                    android:numColumns="5"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:paddingRight="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="@dimen/dp_10"
+                        android:text="@string/recent_live"
+                        android:textColor="@color/color_3"
+                        android:textSize="@dimen/sp_17" />
+
+                    <TextView
+                        android:id="@+id/live_more"
+                        style="@style/more_style" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/live_recyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_5" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:paddingRight="@dimen/dp_10">
+
+                    <TextView
+                        style="@style/home_classify_title_style"
+                        android:text="@string/choiceness_course" />
+
+                    <TextView
+                        android:id="@+id/recommend_course_more"
+                        style="@style/more_style" />
+                </RelativeLayout>
+
+
+                <!--    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        tools:listitem="@layout/item_courses_gridview"
+                        />-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/hot_courses_recyler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+                </RelativeLayout>
+                <!--    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/hot_courses_recyler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:paddingRight="@dimen/dp_10">
+
+                    <TextView
+                        style="@style/home_classify_title_style"
+                        android:text="@string/new_course" />
+
+                    <TextView
+                        android:id="@+id/newest_course_more"
+                        style="@style/more_style" />
+                </RelativeLayout>
+
+                <!--<View style="@style/line_view_horizontal"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"/>-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/new_courses_recyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:paddingRight="@dimen/dp_10"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/home_classify_title_style"
+                        android:text="@string/home_local_course" />
+
+                    <TextView
+                        android:id="@+id/offline_course_more"
+                        style="@style/more_style" />
+                </RelativeLayout>
+
+                <!--<View style="@style/line_view_horizontal"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"/>-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/offline_recyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingRight="@dimen/dp_10">
+
+                        <TextView
+                            android:id="@+id/teacher_txt"
+                            style="@style/home_classify_title_style"
+                            android:text="@string/recommend_teacher" />
+
+                        <TextView
+                            android:id="@+id/lecture_more"
+                            style="@style/more_style" />
+                    </RelativeLayout>
+
+                    <!--    <View style="@style/line_view_horizontal"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            />-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/lecture_recyler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_10">
+
+                        <TextView
+                            android:id="@+id/organization_txt"
+                            style="@style/home_classify_title_style"
+                            android:text="@string/recommend_school" />
+
+                        <TextView
+                            android:id="@+id/organization_more"
+                            style="@style/more_style" />
+                    </RelativeLayout>
+
+                    <!--<View style="@style/line_view_horizontal"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"/>-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/organization_recyler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginTop="@dimen/dp_20" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+    <!--</com.seition.cloud.pro.newcloud.widget.MySwipeRefreshLayout>-->
+
+
+</LinearLayout>

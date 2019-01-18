@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.more.group.activity.GroupDetailsActivity">
+
+    <include layout="@layout/include_common_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_20">
+
+        <com.seition.cloud.pro.newcloud.widget.CustomShapeImageView
+            android:id="@+id/group_details_img"
+            android:layout_width="@dimen/dp_75"
+            android:layout_height="@dimen/dp_75"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10" />
+
+        <LinearLayout
+            android:id="@+id/group_details_intro_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/group_details_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/group_details_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:shadowColor="@color/color_3"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+
+            <LinearLayout
+                android:id="@+id/group_details_creater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:shadowColor="@color/color_3"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:shadowColor="@color/color_3"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="@string/member"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/group_details_memmbercount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="@dimen/dp_5"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:padding="@dimen/dp_5"
+                    android:shadowColor="@color/color_3"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="@string/group_message"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/group_details_topiccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@string/group_info2"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/group_details_instro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/color_9"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@string/group_announcement2"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/group_details_announce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/TomemberList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_arrow_next"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@string/group_member"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/sp_14" />
+
+            <com.seition.cloud.pro.newcloud.widget.HorizontalListView
+                android:id="@+id/group_member_hlist"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_10"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/group_memmber_apply_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/applyTomemberList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@string/unreviewed_group_member"
+                android:textColor="@color/color_3"
+                android:drawableRight="@drawable/ic_arrow_next"
+                android:textSize="@dimen/sp_14" />
+
+            <com.seition.cloud.pro.newcloud.widget.HorizontalListView
+                android:id="@+id/group_member_apply_hlist"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_10"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

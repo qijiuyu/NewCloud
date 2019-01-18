@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/pause"
+        android:icon="@drawable/mediacontroller_pause"
+        android:orderInCategory="100"
+        android:title=""
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <!-- <item
+         android:id="@+id/card"
+         android:icon="@mipmap/sheet"
+         android:orderInCategory="100"
+         android:title=""
+         android:visible="true"
+         app:showAsAction="ifRoom" />-->
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_100"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/commit_this_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:text="点评该课程"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        android:id="@+id/commentStar"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_12" />
+
+</LinearLayout>

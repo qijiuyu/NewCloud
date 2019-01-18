@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#7effffff"
+    android:maxHeight="@dimen/dp_350"
+    android:orientation="vertical">
+
+    <View style="@style/line_view_horizontal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dp_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/shape_exam_level_checked"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/shape_exam_level_unchecked"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/outView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

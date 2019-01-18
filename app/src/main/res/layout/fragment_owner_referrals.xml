@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.more.library.activity.ArticleLibraryListActivity">
+
+    <include layout="@layout/include_fragment_common_title" />
+
+    <View style="@style/line_view_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include layout="@layout/include_springview_recyclerview" />
+    </LinearLayout>
+</LinearLayout>

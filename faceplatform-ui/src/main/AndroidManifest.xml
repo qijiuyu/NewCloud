@@ -1,0 +1,9 @@
+<!--
+  ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
+  -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baidu.idl.face.platform.ui">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+</manifest>

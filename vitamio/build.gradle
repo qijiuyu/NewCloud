@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        ndk {
+            abiFilters('armeabi-v7a')
+        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            jniLibs.srcDirs = ['libs']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+
+    }
+
+}
+dependencies {
+    api 'com.lzy.net:okhttputils:1.6.5'  //可以单独使用，不需要依赖下方的扩展包
+    api 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'//PDF
+    api(rootProject.ext.dependencies["support-v4"]) {
+        exclude module: 'support-annotations'
+    }
+}

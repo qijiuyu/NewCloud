@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10">
+
+    <View
+        android:id="@+id/top_line"
+        style="@style/line_view_horizontal"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_36"
+        android:orientation="horizontal">
+
+        <View style="@style/line_view_vertical" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="会员昵称"
+            android:textColor="@color/color_48"
+            android:textSize="@dimen/sp_11" />
+
+        <View style="@style/line_view_vertical" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="注册时间"
+            android:textColor="@color/color_48"
+            android:textSize="@dimen/sp_11" />
+
+        <View style="@style/line_view_vertical" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推荐层级"
+            android:textColor="@color/color_48"
+            android:textSize="@dimen/sp_11" />
+
+        <View style="@style/line_view_vertical" />
+
+        <TextView
+            android:id="@+id/commission"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="附带收入"
+            android:textColor="@color/color_48"
+            android:textSize="@dimen/sp_11" />
+
+        <View style="@style/line_view_vertical" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推荐人数"
+            android:textColor="@color/color_48"
+            android:textSize="@dimen/sp_11" />
+
+        <View style="@style/line_view_vertical" />
+
+    </LinearLayout>
+
+    <View style="@style/line_view_horizontal" />
+</LinearLayout>

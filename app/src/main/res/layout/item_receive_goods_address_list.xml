@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/receive_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="林俊杰"
+            android:textColor="@color/color_3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/receive_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="13422875036"
+            android:textColor="@color/color_3"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/receive_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:text="四川省成都市天府新区天府大道环球中心"
+        android:textColor="@color/color_3"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_9" />
+
+    <RelativeLayout
+        android:id="@+id/goods_address_list_do_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <LinearLayout
+            android:id="@+id/goods_address_list_do_defult_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <!--android:background="@mipmap/r_serverselect"-->
+            <ImageView
+                android:id="@+id/receive_defult_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="设为默认"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/receive_defult_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="设为默认"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/goods_address_list_do_delete_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+             >
+
+
+            <!--android:drawableLeft="@mipmap/bianji"-->
+            <TextView
+                android:id="@+id/receive_address_modifycation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_edit"
+                android:text="编辑"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+
+            <!--android:drawableLeft="@mipmap/bianji"-->
+            <TextView
+                android:id="@+id/receive_address_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ic_delete"
+                android:text="删除"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E3E8EE" />
+</LinearLayout>

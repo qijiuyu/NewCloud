@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/default_background_color">
+
+    <include layout="@layout/include_common_title"/>
+    <!--<include layout="@layout/include_state_recyclerview"/>-->
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/view_empty"
+        app:msv_loadingView="@layout/view_loading"
+        app:msv_errorView="@layout/view_nonet"
+        app:msv_viewState="loading"
+        app:msv_animateViewChanges="true"
+        >
+        <include layout="@layout/include_recyclerview"/>
+    </com.kennyc.view.MultiStateView>
+
+
+</LinearLayout>

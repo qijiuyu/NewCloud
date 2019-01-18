@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.offline.fragment.OfflineListFragment">
+
+    <include layout="@layout/include_fragment_common_title" />
+
+    <com.seition.cloud.pro.newcloud.widget.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/color_dc"
+        />
+    <include layout="@layout/include_springview_recyclerview"/>
+
+
+</LinearLayout>

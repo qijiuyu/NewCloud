@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background_color_activity"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+ <!--  <include layout="@layout/header_back_text" /> -->
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_48"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/colorPrimary"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:layout_centerInParent="true"
+            android:text="发私信"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收信人:"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/recv_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c4c4c4" />
+
+    <LinearLayout
+        android:id="@+id/send_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="11dp" >
+
+        <ImageView
+            android:id="@+id/smile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            android:scaleType="centerInside"
+            android:src="@mipmap/biaoqing" />
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_border_gray"
+            android:gravity="top"
+            android:hint="说点什么吧"
+            android:padding="5dp"
+            android:maxLines="8"
+            android:textColor="#c4c4c4" />
+    </LinearLayout>
+
+   <!-- <com.seition.project.el3.widget.FaceLayout_old
+        android:id="@+id/face_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:tag="ture"
+        android:visibility="gone" />-->
+
+</LinearLayout>

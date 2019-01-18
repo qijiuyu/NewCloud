@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- android:background="@drawable/list_item_selected" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+        <RelativeLayout
+            android:id="@+id/comment_title_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/topic_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_more"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5" />
+
+            <TextView
+                android:id="@+id/topic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/topic_more"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="私密小组"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/topic_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="v5里近距离他们"
+            android:textColor="@color/color_6"
+            android:textSize="@dimen/sp_14" />
+
+        <LinearLayout
+            android:id="@+id/comment_photo_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.seition.cloud.pro.newcloud.widget.GridViewNoScroll
+                android:id="@+id/topic_pic_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="@dimen/dp_3"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/dp_3" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/topic_auther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ccjhmoon"
+                    android:textColor="@color/color_9"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/topic_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:padding="2dp"
+                    android:text="20:12"
+                    android:textColor="@color/color_9"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/topic_praise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_note_thumb_up"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:padding="2dp"
+                    android:text="赞"
+                    android:textColor="@color/color_9"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/topic_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_note_commit_count"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_2"
+                    android:textColor="@color/color_9"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/common_bg_color" />
+</LinearLayout>

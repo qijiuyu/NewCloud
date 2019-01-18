@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f5"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/now_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/all_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_78"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/exam_type"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:background="@color/color_d2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dp_3"
+            android:paddingTop="@dimen/dp_5"
+            android:textColor="@color/color_40"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <View style="@style/line_view_horizontal" />
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.lecture.fragment.LecturerDetailsFragment">
+
+    <include layout="@layout/include_fragment_common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_100"
+                        android:background="@mipmap/owner_bg"
+                        android:orientation="horizontal"
+                        android:scaleType="fitXY">
+
+                        <ImageView
+                            android:id="@+id/lecture_cover"
+                            android:layout_width="@dimen/dp_75"
+                            android:layout_height="@dimen/dp_75"
+                            android:layout_margin="@dimen/dp_12"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lecture_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_12"
+                                android:text="巧克力花生脆"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp_16" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_12"
+                                    android:text="课程 "
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_12" />
+
+                                <TextView
+                                    android:id="@+id/lecture_course_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_12"
+                                    android:text="8"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_12" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_12"
+                                    android:text=" | "
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_12" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_12"
+                                    android:text="关注 "
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_12" />
+
+                                <TextView
+                                    android:id="@+id/lecture_fans_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_12"
+                                    android:text="120"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp_12" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lecture_attention"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_25"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_oval_white"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/dp_3">
+
+                            <ImageView
+                                android:id="@+id/lecture_attention_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:background="@drawable/ic_focus" />
+
+                            <TextView
+                                android:id="@+id/lecture_attention_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dp_12"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:text="关注"
+                                android:textColor="@color/color_6"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:tabBackground="@drawable/tab_pub_selector"
+                    app:tabIndicatorColor="@color/color_2069cf"
+                    app:tabIndicatorHeight="@dimen/dp_1"
+                    app:tabSelectedTextColor="@color/color_2069cf"
+                    app:tabTextColor="@color/color_3" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/projectPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</LinearLayout>

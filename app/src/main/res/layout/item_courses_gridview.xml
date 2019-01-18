@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/course_cover"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:text="如何使用PS滤镜打造唯美照片"
+        android:textColor="@color/color_3"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/course_learn_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#888"
+            android:textColor="@color/color_8" />
+
+        <TextView
+            android:id="@+id/course_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            android:text="$128.00"
+            android:textColor="#1F68CE" />
+    </RelativeLayout>
+
+
+</LinearLayout>

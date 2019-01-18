@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_content"
+    style="@style/default_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_fragment_common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_121_5"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_36"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="@string/course_info"
+                    android:textColor="@color/color_8"
+                    android:textSize="@dimen/sp_14" />
+
+                <View style="@style/line_view_horizontal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:orientation="horizontal"
+
+                    android:paddingRight="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/cover"
+                        android:layout_width="@dimen/dp_130"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/default_img" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/course_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+
+                            android:textColor="@color/item_title_color"
+                            android:textSize="@dimen/sp_16" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/pay_money"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textColor="@color/color_fc0203"
+                            android:textSize="@dimen/sp_14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <include layout="@layout/include_made_of_payment" />
+
+            <LinearLayout
+                android:id="@+id/coupon_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_10"
+                        android:text="@string/coupon"
+                        android:textColor="@color/color_8"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/number_coupon_txt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_arrow_next"
+                        android:gravity="center_vertical|right"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:textColor="@color/color_c"
+                        android:textSize="@dimen/sp_12" />
+                </LinearLayout>
+
+                <View style="@style/line_view_horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/number_card_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_10"
+                        android:text="@string/entity_card"
+                        android:textColor="@color/color_8"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/number_card_bt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:drawableEnd="@drawable/ic_arrow_next"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:textColor="@color/color_c"
+                        android:textSize="@dimen/sp_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/discount_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/course_price"
+                        android:textColor="@color/color_8"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥0.0"
+                        android:textColor="@color/color_fc0203"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coupon_price"
+                        android:textColor="@color/color_8"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-¥0.0"
+                        android:textColor="@color/color_fc0203"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp_10">
+
+                <CheckBox
+                    android:id="@+id/agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selector_check_select_img"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/consent"
+                    android:textColor="@color/color_8"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/procotol_buy"
+                    android:textColor="@color/color_188eee"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_49"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unpaid_money"
+                android:textColor="@color/color_8"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/pay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/color_fc0203"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/buy"
+            android:layout_width="@dimen/dp_170"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/commit_order"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+    </LinearLayout>
+
+
+</LinearLayout>

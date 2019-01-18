@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.more.news.activity.NewsDetailsActivity">
+
+    <include layout="@layout/include_common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_content_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:paddingLeft="@dimen/dp_14"
+                    android:paddingRight="@dimen/dp_14"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_14"
+                    android:paddingRight="@dimen/dp_14">
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_72"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/tv_read"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/color_72"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:background="@color/color_e"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_14"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_abstract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:lineSpacingExtra="@dimen/dp_1"
+                        android:textColor="@color/color_5a"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_view_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_16"/>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:lineSpacingExtra="@dimen/dp_3"
+                    android:paddingLeft="@dimen/dp_14"
+                    android:paddingRight="@dimen/dp_14"
+                    android:textColor="@color/color_72"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

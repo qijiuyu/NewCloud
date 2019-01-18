@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 标题样式 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_header_title_height"
+        android:background="@color/colorPrimary"
+        android:paddingTop="@dimen/activity_top_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/find"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_17" />
+    </RelativeLayout>
+
+    <!-- 带右箭头的item 样式 -->
+    <RelativeLayout
+        android:id="@+id/rl_mall"
+        style="@style/more_item_relative_style">
+
+        <TextView
+            style="@style/more_item_title_style"
+            android:drawableLeft="@mipmap/faxian_mall"
+            android:drawablePadding="@dimen/dp_15"
+            android:text="@string/shopping_mall" />
+
+        <TextView
+            style="@style/more_style"
+            android:text="" />
+    </RelativeLayout>
+
+    <!-- GridView 默认样式 -->
+    <com.seition.cloud.pro.newcloud.widget.GridViewNoScroll
+        android:id="@+id/cate_list"
+        style="@style/default_gridview_style"
+        android:numColumns="5" />
+
+    <!-- 输入框 默认样式 -->
+    <android.support.design.widget.TextInputLayout style="@style/text_input_layout_style">
+
+        <AutoCompleteTextView
+            android:id="@+id/account"
+            style="@style/edittext_textview_style"
+            android:hint="@string/login_account"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress|textPhonetic"
+            android:nextFocusForward="@+id/password" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

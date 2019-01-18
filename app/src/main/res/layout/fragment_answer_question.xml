@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <include layout="@layout/include_fragment_common_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:text="问题描述:"
+        android:textColor="@color/color_6"
+        android:textSize="@dimen/sp_15"
+        />
+    <TextView
+        android:id="@+id/qa_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="如何看待中兴被美国政府？"
+        android:textColor="@color/color_8"
+        android:textSize="@dimen/sp_15"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/color_dc"
+        />
+
+    <EditText
+        android:id="@+id/qa_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:lineSpacingExtra="@dimen/dp_4"
+        android:gravity="top"
+        android:background="@null"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text=""
+        android:hint="写回答..."
+        android:textColorHint="@color/color_c4cccc"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/sp_15"
+        />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <include layout="@layout/include_fragment_common_title"/>
+
+
+    <RelativeLayout
+        android:id="@+id/qa_cateSelect_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_40"
+        android:paddingBottom="@dimen/dp_8"
+        android:background="@drawable/layer_list_edittext_bg_bottom_default"
+        >
+
+        <ImageView
+            android:id="@+id/qa_cate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_qa_publish_label"
+            />
+        <TextView
+            android:id="@+id/cate_name"
+            android:layout_toRightOf="@id/qa_cate"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/qa_select_category"
+            android:textColor="@color/color_c4cccc"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_qa_sanjiao"
+            />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/qa_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@null"
+        android:layout_marginTop="@dimen/dp_15"
+        android:hint="标题:请输入你的问题"
+        android:textColorHint="@color/color_c4cccc"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/sp_16"
+        />
+</LinearLayout>

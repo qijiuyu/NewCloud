@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.owner.bind.fragment.BindFaceFragment">
+
+    <include layout="@layout/include_fragment_common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/face" />
+
+    <RelativeLayout
+        android:id="@+id/face_bind_ll"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white">
+
+        <TextView
+
+            android:id="@+id/face_bind_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="人脸绑定"
+
+            />
+
+        <TextView
+            android:id="@+id/face_bind_result"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_arrow_next"
+            android:gravity="center"
+            android:text="去绑定" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dcdcdc" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/face_loginset_ll"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="人脸登录" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:checked="true"
+            android:switchMinWidth="30dp"
+            android:thumb="@android:color/transparent"
+            android:track="@drawable/selector_switch_face" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dcdcdc" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/face_taste_ll"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="体验刷脸" />
+
+        <TextView
+            android:id="@+id/face_taste_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_arrow_next"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dcdcdc" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/id_popup_window_outside_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#00ffffff"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@id/id_popup_window_anim_view"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="105dp">
+        <ListView
+            android:id="@+id/id_lv_source_view"
+            android:background="@drawable/live_play_video_line_hov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

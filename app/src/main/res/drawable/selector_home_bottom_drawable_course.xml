@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_home_bottom_course_press" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_home_bottom_course" android:state_checked="false" />
+    <item android:drawable="@drawable/ic_home_bottom_course" android:state_focused="false" />
+    <item android:drawable="@drawable/ic_home_bottom_course" android:state_checkable="false" />
+    <item android:drawable="@drawable/ic_home_bottom_course" android:state_pressed="false" />
+    <item android:drawable="@drawable/ic_home_bottom_course" android:state_selected="false" />
+</selector>

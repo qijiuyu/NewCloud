@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_recyclerview" />
+
+    <LinearLayout
+        android:id="@+id/price_more"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_3"
+        android:layout_weight="1"
+        android:background="@drawable/shape_money_unselect"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="match_parent"
+            android:ems="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_3"
+            android:text="@string/price_symbol"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_20" />
+
+        <View style="@style/line_view_vertical" />
+
+        <EditText
+            android:id="@+id/more_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_2"
+            android:background="@color/color_e"
+            android:ems="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_3"
+            android:text="@string/custom"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+</LinearLayout>

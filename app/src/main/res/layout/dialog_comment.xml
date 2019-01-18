@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="评价该课程"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/sp_12" />
+
+
+    <RatingBar
+        android:id="@+id/grade"
+        style="@style/roomRatingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/shape_frame_comment"
+        android:gravity="top"
+        android:hint="评论,120字内"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/commentClick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

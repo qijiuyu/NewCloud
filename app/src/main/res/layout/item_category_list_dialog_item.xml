@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/first_category_listlay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/xxxx"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/red" />
+
+        <TextView
+            android:id="@+id/mall_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/xxxx"
+            android:gravity="center"
+            android:maxLines="3"
+            android:text="ddddd"
+            android:textColor="@color/color_3" />
+
+    </RelativeLayout>
+
+</LinearLayout>

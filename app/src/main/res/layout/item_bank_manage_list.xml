@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10"
+
+    >
+
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="中国银行(0496)"
+        android:textColor="@color/color_3"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/bank_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="解除绑定"
+        android:textColor="#d04c4c"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

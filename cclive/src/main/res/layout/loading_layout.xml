@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/id_popup_window_outside_view"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#51000000">
+
+    <RelativeLayout
+        android:id="@id/id_popup_window_anim_view"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_bg">
+
+        <ImageView
+            android:id="@+id/id_loading_img"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loading"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

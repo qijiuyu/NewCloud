@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="18dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/exam_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/exam_photo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/exam_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:textColor="@color/color_3"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/exam_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="0'0"
+        android:textColor="@color/color_8"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/exam_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="60dp"
+        android:text=""
+        android:textColor="@color/color_8"
+        android:textSize="12sp" />
+</LinearLayout>

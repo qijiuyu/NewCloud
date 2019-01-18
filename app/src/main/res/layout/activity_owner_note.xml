@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.owner.note.OwnerNoteActivity">
+
+    <include layout="@layout/include_fragment_common_title" />
+
+    <include layout="@layout/include_state_recyclerview"/>
+
+</LinearLayout>

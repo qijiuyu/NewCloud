@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/score"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/test_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="00"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/test_instro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_a9bde7"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/test_again"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_test_result_button_bg_white"
+        android:gravity="center"
+        android:text="再次挑战"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>

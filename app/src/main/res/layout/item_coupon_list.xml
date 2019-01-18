@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_frame_coupon_white_left"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="#f77a7a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/coupon_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="80"
+                    android:textColor="#f77a7a"
+                    android:textSize="33sp" />
+
+                <TextView
+                    android:id="@+id/coupon_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="80"
+                    android:textColor="#f77a7a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/coupon_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="bottom"
+                    android:textColor="#f77a7a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/coupon_type"
+                    android:layout_width="36dp"
+                    android:layout_height="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_frame_coupon_txt_yh"
+                    android:gravity="center"
+                    android:text="优惠券"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text=""
+                android:textColor="@color/color_65"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/astrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/time"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/time"
+                android:text="仅限购买指定课程时使用"
+                android:textColor="@color/color_65"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/start_or_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="2016.09.10 - 2016.12.31"
+                android:textColor="@color/color_9e"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/couponline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/coupon_line_yh" />
+
+        <RelativeLayout
+            android:id="@+id/use"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_frame_coupon_bg_yh"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/use_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:text="立即使用"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

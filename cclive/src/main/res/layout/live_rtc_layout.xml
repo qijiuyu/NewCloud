@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#99000000"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_rtc_no_network"
+        style="@style/rtcLinearLayoutTheme">
+        <ImageView
+            android:src="@mipmap/tips_pic_nonet"
+            style="@style/rtcTextViewTipsTheme" />
+        <TextView
+            android:text="网络异常，请检查网络"
+            android:layout_marginTop="15dp"
+            style="@style/rtcTextViewTipsTheme" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_rtc_permission"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="187dp"
+        android:layout_height="134dp" >
+
+        <TextView
+            android:text="连麦需要允许以下权限："
+            style="@style/rtcTextViewTipsTheme" />
+
+        <TextView
+            android:id="@+id/rtc_camera_permission"
+            android:shadowColor="#666666"
+            android:shadowDy="1"
+            android:shadowDx="1"
+            android:shadowRadius="1"
+            android:layout_marginTop="11dp"
+            android:paddingLeft="14dp"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:text="获取摄像头权限"
+            android:gravity="center_vertical"
+            android:background="#99000000"
+            android:layout_height="33dp"
+            android:layout_width="152dp" />
+
+        <TextView
+            android:id="@+id/rtc_audio_permission"
+            android:shadowColor="#666666"
+            android:shadowDy="1"
+            android:shadowDx="1"
+            android:shadowRadius="1"
+            android:text="麦克风权限"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="14dp"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:background="#99000000"
+            android:layout_height="33dp"
+            android:layout_width="152dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_rtc_apply"
+        style="@style/rtcLinearLayoutTheme">
+        <TextView
+            android:text="与主播互动"
+            style="@style/rtcTextViewTipsTheme" />
+        <Button
+            android:id="@+id/btn_rtc_apply"
+            android:text="申请连麦"
+            style="@style/rtcButtonTheme" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_rtc_applyed"
+        style="@style/rtcLinearLayoutTheme">
+
+        <TextView
+            android:text="已申请与主播互动"
+            style="@style/rtcTextViewTipsTheme" />
+
+        <Button
+            android:id="@+id/btn_rtc_cancel"
+            android:text="取消连麦"
+            style="@style/rtcButtonTheme" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_rtc_connected"
+        style="@style/rtcLinearLayoutTheme">
+        <TextView
+            android:id="@+id/tv_rtc_counter"
+            android:text="连麦中：00:00"
+            style="@style/rtcTextViewTipsTheme" />
+
+        <Button
+            android:id="@+id/btn_rtc_hangup"
+            android:text="挂断"
+            style="@style/rtcButtonTheme" />
+
+    </LinearLayout>
+
+</RelativeLayout>

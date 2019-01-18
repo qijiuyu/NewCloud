@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    tools:context=".home.mvp.ui.owner.message.activity.MessageCommentActivity"
+    android:orientation="vertical">
+    <include layout="@layout/include_common_title" />
+</LinearLayout>

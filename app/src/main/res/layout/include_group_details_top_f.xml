@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/group_details_lay"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <com.seition.cloud.pro.newcloud.widget.CustomShapeImageView
+            android:id="@+id/group_details_img"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/group_details_intro_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/group_details_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/group_details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:shadowColor="@color/color_6"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/group_topic_memmbercount_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:shadowColor="@color/color_6"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="成员"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/group_details_memmbercount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="196"
+                    android:textColor="@color/color_9"
+                    android:textColorHighlight="@color/color_6"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/group_topic_topiccount_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:padding="5dp"
+                    android:shadowColor="@color/color_6"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="帖子"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/group_details_topiccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="122"
+                    android:textColor="@color/color_9"
+                    android:textColorHighlight="@color/color_6"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/group_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="5dp"
+                android:shadowColor="@color/color_6"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="退出小组"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+            <!--oval_btn-->
+            <LinearLayout
+                android:id="@+id/group_create_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/group_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="5dp"
+                    android:shadowColor="@color/color_6"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="编辑小组"
+                    android:textColor="@color/color_3"
+                    android:background="@drawable/shape_frame_theme"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/group_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="5dp"
+                    android:shadowColor="@color/color_6"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="解散小组"
+                    android:textColor="@color/color_3"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

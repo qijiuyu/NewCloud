@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+  <!--   android:background="@drawable/item_group_category_selector" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <com.seition.cloud.pro.newcloud.widget.CustomShapeImageView
+            android:id="@+id/group_member_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:focusable="false" />
+        <!--  android:textColor="@drawable/item_group_category_text_selector" -->
+        <TextView
+            android:id="@+id/group_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:textSize="14sp"
+            android:contentDescription="@string/app_name"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

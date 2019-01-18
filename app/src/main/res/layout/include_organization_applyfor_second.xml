@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/apply_second_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="机构头像"
+            android:textColor="@color/color_3"
+            android:textSize="15sp" />
+
+        <com.seition.cloud.pro.newcloud.widget.CustomShapeImageView
+            android:id="@+id/o_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_add_photo"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submit_second"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_frame_theme"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="请选择图片"
+        android:textColor="@color/white" />
+</LinearLayout>

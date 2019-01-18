@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.owner.OwnerSettingFragment">
+
+    <include layout="@layout/include_fragment_common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rl_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_75"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+            <!--com.seition.cloud.pro.newcloud.widget.CustomShape-->
+            <ImageView
+                android:id="@+id/user_photo"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </LinearLayout>
+
+        <View style="@style/line_view_horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bind"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/bind_manage" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_change_pwd"
+            style="@style/more_item_relative_style"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/change_password" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/line_view_horizontal" />
+
+        <RelativeLayout
+            style="@style/more_item_relative_style"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/not_wifi_play_video" />
+
+
+            <Switch
+                android:id="@+id/playSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:switchMinWidth="30dp"
+                android:thumb="@android:color/transparent"
+                android:track="@drawable/selector_switch_face" />
+
+            <TextView
+                android:id="@+id/wifi_play_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_arrow_next"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/line_view_horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/version_updata_rl"
+            style="@style/more_item_relative_style"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/updata_txt" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/line_view_horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/feedback"
+            style="@style/more_item_relative_style"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/feedback" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/line_view_horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/clean_cache_rl"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/clean_cache" />
+
+            <TextView
+                android:id="@+id/cache_size"
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/line_view_horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/about_us_rl"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/about_us"
+                android:textColor="@color/color_fe4d44" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/exit_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+</LinearLayout>

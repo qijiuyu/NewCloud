@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/apply_five_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="@dimen/dp_20"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/apply_identity_attach"
+            android:textColor="@color/color_3"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/identity_attach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_border_theme"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+
+            android:text="@string/select_organ_attach"
+            android:textColor="@color/color_3"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <!--  -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/select_organ_attach_notice3"
+        android:textColor="@color/color_3"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/identity_attach_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit_five"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_frame_theme"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="上传附件"
+        android:textColor="@color/white" />
+</LinearLayout>

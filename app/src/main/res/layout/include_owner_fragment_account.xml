@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/balance_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/banlance"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/user_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:text="0"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+
+    <View style="@style/line_view_vertical" />
+
+    <LinearLayout
+        android:id="@+id/recttte_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/income"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/user_recttte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:text="0"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <View style="@style/line_view_vertical" />
+
+    <LinearLayout
+        android:id="@+id/integral_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/by_getting_number"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/user_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:text="0"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bank_card_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank_card"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/bank_card_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</LinearLayout>

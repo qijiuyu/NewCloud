@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/liveness_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    >
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_marginTop="22dp"
+        android:layout_height="45dp"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/arrow_blue"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fac_camera_ll"
+        android:layout_below="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+        <FrameLayout
+            android:id="@+id/liveness_surface_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <com.baidu.idl.face.platform.ui.widget.FaceDetectRoundView
+            android:id="@+id/liveness_face_round"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            />
+
+        <LinearLayout
+            android:id="@+id/liveness_surface_overlay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15" />
+
+            <TextView
+                android:id="@+id/liveness_top_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="8dp"
+                android:text="@string/detect_face_in"
+                android:textColor="#ff2069cf"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.65" />
+
+            <TextView
+                android:id="@+id/liveness_bottom_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.36"
+                android:gravity="center|top"
+                android:text=""
+                android:textColor="#D0D0D0"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/liveness_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:src="@mipmap/ic_close_ext" />
+
+        <ImageView
+            android:id="@+id/liveness_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:src="@mipmap/ic_enable_sound_ext" />
+
+        <ImageView
+            android:id="@+id/liveness_success_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/ic_success"
+            android:visibility="invisible" />
+
+        <HorizontalScrollView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/liveness_result_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fac_info_ll"
+        android:layout_below="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/face_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请把脸对准圆圈内"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:visibility="visible"
+            android:textColor="#888"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/face_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oval_blue_face"
+            android:padding="10dp"
+            android:text="请把脸对准圆圈内"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:visibility="visible"
+            android:textColor="#888"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

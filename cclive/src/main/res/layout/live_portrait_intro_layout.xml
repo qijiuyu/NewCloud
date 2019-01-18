@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fafafa"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_intro_title"
+        android:background="@drawable/live_infos_intro_tv_bg"
+        android:text="标题"
+        android:lineSpacingMultiplier="1.5"
+        android:textSize="@dimen/pc_live_intro_title"
+        android:textColor="#ff6633"
+        android:paddingLeft="15dp"
+        android:paddingTop="9dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/content_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+</LinearLayout>

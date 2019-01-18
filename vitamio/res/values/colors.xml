@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="mediacontroller_bg">#99000000</color>
+
+    <color name="color_2069cf">#2069cf</color>
+    <color name="color_303f9f">#303F9F</color>
+
+    <color name="colorPrimary">@color/color_2069cf</color>
+    <color name="colorPrimaryDark">@color/color_303f9f</color>
+    <color name="colorAccent">@color/color_2069cf</color>
+</resources>

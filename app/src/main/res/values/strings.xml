@@ -1,0 +1,343 @@
+<resources>
+    <string name="app_name">Eduline</string>
+    <string name="procotol_name">Eduline购买协议</string>
+    <string name="procotol">我同意《Eduline协议》</string>
+    <string name="procotol2">《Eduline协议》</string>
+    <string name="procotol6">《Eduline在线退款服务协议》</string>
+    <string name="procotol4">请同意《Eduline注册协议》！</string>
+    <string name="procotol3">请先阅读《Eduline购买协议》并同意该协议</string>
+    <string name="procotol5">请同意Eduline在线退款服务协议才能退款！</string>
+    <string name="procotol_buy">《Eduline购买协议》</string>
+    <string name="start_app">开启我的Eduline</string>
+    <string name="cache_file_name">Eduline</string>
+    <string name="consent">我已阅读并同意</string>
+    <string name="number">数量</string>
+    <string name="info">简介</string>
+    <string name="price_symbol">¥</string>
+
+    <string name="home">首页</string>
+    <string name="course">课程</string>
+    <string name="find">发现</string>
+    <string name="owner">我的</string>
+    <string name="load_message">正在加载中...</string>
+    <string name="net_unuse">当前网络不可用，请检测网络配置！</string>
+    <string name="getting_data">数据请求中</string>
+
+    <string name="classify">分类</string>
+
+    <string name="login">登录</string>
+    <string name="get_password">找回密码</string>
+    <string name="login_more">其他方式登录</string>
+    <string name="login_account">手机号或邮箱地址</string>
+    <string name="face_login">刷脸登录</string>
+    <string name="visitor">游客登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="register">注册</string>
+    <string name="register_done">完成</string>
+    <string name="email_location">邮箱地址</string>
+    <string name="verify_code">验证码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="phone_number">手机号</string>
+    <string name="register_phone">手机注册</string>
+    <string name="register_email">邮箱注册</string>
+    <string name="use_email_get_key">使用邮箱找回密码</string>
+    <string name="use_phone_get_key">使用手机找回密码</string>
+    <string name="in_login">请输入邮箱/手机号/用户名</string>
+    <string name="in_phone">请输入手机号</string>
+    <string name="get_autn_code">获取验证码</string>
+    <string name="in_code">请输入验证码</string>
+    <string name="in_email">请输入邮箱地址</string>
+    <string name="in_uname">请输入用户名</string>
+    <string name="in_entity_card_number">请输入实体卡卡号</string>
+
+    <string name="course_number">课程数</string>
+    <string name="favorable_rate">好评度</string>
+    <string name="fans_number">粉丝数</string>
+    <string name="old_price">原价</string>
+    <string name="free">免费</string>
+    <string name="banlance">余额</string>
+    <string name="owner_banlance">我的余额</string>
+    <string name="income">收入</string>
+    <string name="owner_income">我的收入</string>
+    <string name="by_getting_number">积分</string>
+    <string name="owner_by_getting_number">我的积分</string>
+    <string name="account_banlance">账户余额</string>
+    <string name="agree">同意</string>
+    <string name="unagree">不同意</string>
+
+    <!--  message  -->
+    <string name="chatting_records">聊天记录</string>
+    <string name="reply_comment">回复</string>
+
+    <!--  money  -->
+    <string name="recharge_integral">充积分</string>
+    <string name="bill_details">明细</string>
+    <string name="recharge">充值</string>
+    <string name="custom">自定义</string>
+    <string name="recharge_card">充值卡充值</string>
+    <string name="commission_withdraw">提现</string>
+    <string name="commission_withdraw_all">全部提现</string>
+    <string name="money_bank_card">银行卡</string>
+    <string name="pay_way">支付方式</string>
+    <string name="pay_info">注：转账到余额后则不能再转到银行卡</string>
+    <string name="integral_info">(注 : 1元=10积分)</string>
+
+    <!--  news  -->
+    <string name="summary">摘要：</string>
+
+    <!--  order  -->
+    <string name="commit_order">提交订单</string>
+    <string name="unpaid_money">实付</string>
+
+
+    <!--coupon -->
+    <string name="coupon">优惠券</string>
+    <string name="entity_card">实体卡</string>
+
+
+    <!--  course -->
+    <string name="buy">购买</string>
+    <string name="course_details">课程详情</string>
+    <string name="live_details">直播详情</string>
+    <string name="course_intro">课程简介</string>
+    <string name="course_info">商品信息</string>
+    <string name="course_price">商品金额</string>
+    <string name="coupon_price">优惠折扣</string>
+    <string name="course_download">课程下载</string>
+    <string name="download_all">下载全部</string>
+
+
+    <string name="course_skill">分类</string>
+
+    <string name="local_course">点播课程</string>
+    <string name="sort">综合排序</string>
+    <string name="select_type">筛选条件</string>
+    <string name="teacher">讲师</string>
+    <string name="school">校区</string>
+
+    <!--  teacher -->
+    <string name="teacher_info">讲师信息</string>
+    <string name="teacher_more_info">更多详情</string>
+    <string name="teacher_location">所在地</string>
+    <string name="teaching_method">授课方式</string>
+    <string name="teacher_default_info">老师太忙啦，忙得自我介绍都没时间写哟~</string>
+
+
+    <!--  launcher -->
+    <string name="skip">跳过</string>
+    <string name="not_wifi_play_video">Wi-Fi下视频自动播放</string>
+    <string name="updata_txt">版本更新</string>
+    <string name="feedback">意见反馈</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="about_us">关于我们</string>
+    <string name="logout">退出账号</string>
+
+    <!--  setting -->
+    <string name="change_password">修改密码</string>
+
+    <!--  home -->
+    <string name="recent_live">最近直播</string>
+    <string name="search_course">搜索课程</string>
+    <string name="choiceness_course">精选课程</string>
+    <string name="new_course">最新课程</string>
+    <string name="home_local_course">预约课程</string>
+    <string name="recommend_teacher">名师推荐</string>
+    <string name="recommend_school">机构推荐</string>
+    <string name="more">更多</string>
+
+    <!--  user -->
+    <string name="uname_txt">昵称</string>
+    <string name="gender_txt">性别</string>
+    <string name="man_txt">男</string>
+    <string name="woman_txt">女</string>
+    <string name="input_individual_resume">请输入个人简介</string>
+
+    <!--  更多-发现 -->
+    <string name="information">资讯</string>
+    <string name="shopping_mall">商城</string>
+    <string name="more_test">考试</string>
+    <string name="more_library">文库</string>
+    <string name="more_qa">问答</string>
+    <string name="more_group">小组</string>
+
+    <!--  考试 -->
+    <string name="question_number">题数</string>
+    <string name="join_test_number">参考人数</string>
+    <string name="exam">在线考试</string>
+    <string name="last_topic">上一题</string>
+    <string name="next_topic">下一题</string>
+    <string name="open_analysis">展开解析</string>
+    <string name="collect_this_topic">收藏习题</string>
+    <string name="the_answer_right">正确答案</string>
+    <string name="my_answer">我的答案</string>
+    <string name="analysis">解析:</string>
+    <string name="analysis_info">具体解析信息</string>
+
+    <!--  机构 -->
+    <string name="contact_customer_service">联系客服</string>
+    <string name="fans">粉丝</string>
+    <string name="evaluate">评价</string>
+    <string name="page_view">浏览</string>
+
+    <string name="apply_organ">申请机构</string>
+    <string name="app_account">我的账号</string>
+    <string name="now_statue">当前状态:</string>
+    <string name="selece_bank">选择开户行</string>
+    <string name="please_select_bank">请选择开户行:</string>
+    <string name="apply_organ_name">机构名称</string>
+    <string name="dismiss_the_reason">驳回原因</string>
+    <string name="apply_organ_identity_number">法人身份证</string>
+    <string name="apply_organ_phone">联系电话</string>
+    <string name="apply_organ_address">联系地址</string>
+    <string name="apply_organ_reson">申请理由</string>
+    <string name="apply_organ_attach">机构认证附件</string>
+    <string name="apply_identity_attach">身份证认证附件</string>
+    <string name="select_organ_attach">选择附件</string>
+    <string name="select_organ_attach_notice">未选择任何文件</string>
+    <string name="select_organ_attach_notice2">申请独立财务账户需提交以下材料:营业执照、税务登记证、组织机构代码、对公账号相关信息、机构法人身份证复印件</string>
+    <string name="select_organ_attach_notice3">认证本人手持身份证照片，证件所有信息清晰可见，手持证件人的五官清晰可见。</string>
+
+    <string name="submit_apply">提交申请</string>
+    <string name="please_select">请选择</string>
+
+    <!--  小组 -->
+    <string name="add_group_face">添加小组封面</string>
+    <string name="group_name">小组名称</string>
+    <string name="group_classify">分类</string>
+    <string name="group_info">小组简介(不能超过80字)</string>
+    <string name="group_announcement">小组公告(不能超过80字)</string>
+    <string name="member">成员</string>
+    <string name="group_member">小组成员</string>
+    <string name="unreviewed_group_member">待审核小组成员</string>
+    <string name="group_message">帖子</string>
+    <string name="group_info2">小组简介</string>
+    <string name="group_announcement2">小组公告</string>
+    <string name="group_create">创建小组</string>
+    <string name="group_edit">编辑小组</string>
+    <string name="group_operation_save">保存</string>
+    <string name="group_member_apply">待审核小组成员</string>
+
+    <!-- 问答-->
+    <string name="search_qa">搜索问题</string>
+    <string name="qa_info">问题描述</string>
+    <string name="qa_info_hint">请输入反馈内容</string>
+    <string name="contact_infomation">联系方式</string>
+    <string name="contact_infomation_hint">请输入联系方式</string>
+    <string name="qa">问答</string>
+    <string name="qa_new">最新</string>
+    <string name="qa_send">发送</string>
+    <string name="qa_send_hint">说点什么吧...</string>
+    <string name="qa_search_hint">搜索您关心的问题</string>
+    <string name="qa_select_category">请选择分类</string>
+    <string name="qa_classify">选择分类</string>
+
+    <!-- 文库-->
+    <string name="library">文库</string>
+    <string name="library_classify">文库分类</string>
+
+    <!-- 商城-->
+    <string name="mall">商城</string>
+    <string name="mall_details_notice">此为虚拟礼物，不予以实物，望谅解</string>
+
+    <string name="receive_people">收货人</string>
+    <string name="receive_phone">联系电话</string>
+    <string name="receive_area">所在地区</string>
+    <string name="receive_address">收货地址</string>
+    <string name="receive_set_default">设为默认地址</string>
+    <string name="add_new_receive_address">新增收货地址</string>
+    <string name="modify_new_receive_address">修改收货地址</string>
+    <!-- 资讯-->
+    <string name="news">资讯</string>
+    <string name="news_details">资讯详情</string>
+    <!-- 搜索-->
+    <string name="search">搜索</string>
+    <!-- 机构-->
+    <string name="organization">入驻机构</string>
+    <string name="organization_details">机构详情</string>
+    <string name="organization_follow_no">关注</string>
+    <string name="organization_follow_yes">取消关注</string>
+
+    <!-- 笔记-->
+    <string name="owner_note_comment">笔记评论</string>
+
+    <!-- 我的-->
+    <string name="owner_fans"> 粉丝</string>
+    <string name="owner_attention"> 关注</string>
+    <string name="owner_home">个人中心</string>
+    <string name="bank_card">银行卡</string>
+    <string name="updata_vip">成为会员</string>
+    <string name="become_vip">成为会员</string>
+    <string name="owner_login">登录/注册</string>
+    <string name="owner_course">我的课程</string>
+    <string name="owner_note">我的笔记</string>
+    <string name="owner_collect">我的收藏</string>
+    <string name="owner_qa">我的问答</string>
+    <string name="owner_exam">我的考试</string>
+    <string name="owner_group">我的小组</string>
+    <string name="owner_library">我的文库</string>
+    <string name="owner_download">我的下载</string>
+    <string name="owner_organization">我的机构</string>
+    <string name="owner_referrials">我的下线</string>
+    <string name="owner_coupon">我的卡券</string>
+    <string name="owner_study_record">学习记录</string>
+    <string name="owner_course_by_teacher">我的授课</string>
+    <string name="owner_exchange_record">兑换记录</string>
+    <string name="owner_order">我的订单</string>
+    <string name="owner_setting">设置</string>
+    <string name="owner_feed_back">意见反馈</string>
+
+    <string name="look_all">查看全部</string>
+    <string name="not_pay">未支付</string>
+    <string name="canceled">已取消</string>
+    <string name="is_done">已完成</string>
+    <string name="apply_to_refund">申请退款</string>
+    <string name="refund_done">已退款</string>
+
+    <string name="submit">提交</string>
+
+    <!-- 消息-->
+    <string name="message">我的消息</string>
+    <string name="message_private">我的私信</string>
+    <string name="message_comment">收到的评论</string>
+    <string name="message_system">系统消息</string>
+
+    <!-- 绑定管理-->
+    <string name="bind_manage">绑定管理</string>
+    <string name="bank">银行卡</string>
+    <string name="bind_bank">已绑定银行卡</string>
+    <string name="bind_ali">支付宝</string>
+    <string name="bind_face">人脸绑定</string>
+    <string name="add_bank">绑定银行卡</string>
+    <string name="bank_manage">绑定银行卡管理</string>
+
+    <!--会员-->
+    <!-- 绑定管理-->
+    <string name="member_center">会员中心</string>
+    <string name="member_recharge">会员充值</string>
+    <string name="vip_instro">开通会员专享免费课程</string>
+    <string name="getting_vip">开通会员</string>
+    <string name="vt_renew_vip">充会员</string>
+    <string name="not_vip">非VIP会员</string>
+    <string name="vip_type">开通会员</string>
+    <string name="vip_vtrenew_mouth_number">数量:</string>
+    <string name="new_vip">最新会员</string>
+    <string name="now_vip_level">当前身份：</string>
+    <string name="member_benefit">每月可免费学习多个收费课程，还有更多惊喜折扣</string>
+    <string name="vip_agree_txt">我已阅读并同意</string>
+    <string name="pay_money_number_by_vip">我已阅读并同意</string>
+    <string name="start_pay">确认支付</string>
+    <string name="actual_money">实付</string>
+
+    <string name="appbar_overscroll_behavior">com.seition.cloud.pro.newcloud.app.behavior.AppBarLayoutOverScrollViewBehavior</string>
+    <string name="appbar_circleimageview_behavior">com.seition.cloud.pro.newcloud.app.behavior.CircleImageInUsercBehavior</string>
+
+
+    <string name="no_data">没有数据</string>
+    <string name="no_data_with_try_again">没有数据,点击重试</string>
+
+    <string name="info_read_it">阅读：</string>
+    <string name="commit">提交</string>
+
+</resources>

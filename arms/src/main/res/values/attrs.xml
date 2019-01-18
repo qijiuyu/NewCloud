@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutoTabLayout">
+        <attr name="auto_textSize_base_width" format="boolean"></attr>
+    </declare-styleable>
+
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+
+
+    <declare-styleable name="msv_SimpleMultiStateView">
+        <attr name="msv_emptyView" format="reference"/>
+        <attr name="msv_loadingView" format="reference"/>
+        <attr name="msv_failView" format="reference"/>
+        <attr name="msv_contentView" format="reference"/>
+        <attr name="msv_nonetView" format="reference"/>
+        <attr name="msv_viewState" format="enum">
+            <enum name="content" value="10001"/>
+            <enum name="loading" value="10002"/>
+            <enum name="empty" value="10003"/>
+            <enum name="fail" value="10004"/>
+            <enum name="nonet" value="10005"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="contentTextSize" format="dimension"/>
+        <attr name="contentTextColor" format="color"/>
+        <attr name="contentLineSpacingMultiplier" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="expandText" format="string"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="collapseText" format="string"/>
+        <attr name="expandCollapseTextColor" format="color"/>
+        <attr name="DrawableAndTextGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.owner.bind.fragment.BindManageFragment">
+
+    <include layout="@layout/include_fragment_common_title" />
+
+    <TextView
+        android:id="@+id/bind_bank_txt"
+        style="@style/more_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:text="@string/bank_card"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/sp_16" />
+
+    <View style="@style/line_view_horizontal" />
+
+    <TextView
+        android:id="@+id/bind_ali_txt"
+        style="@style/more_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:text="@string/bind_ali"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/sp_16" />
+
+    <View style="@style/line_view_horizontal" />
+
+    <TextView
+        android:id="@+id/bind_face_txt"
+        style="@style/more_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:text="@string/bind_face"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

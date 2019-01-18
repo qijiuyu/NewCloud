@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    tools:context=".home.mvp.ui.owner.bind.fragment.BindAliFragment"
+    android:orientation="vertical">
+    <include layout="@layout/include_fragment_common_title" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="支付宝账号"
+        android:textColor="@color/color_65"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/aliAcountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/aliAcount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="180*****564"
+            android:textColor="@color/color_65"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/aliAcount_chang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/change_alipay"
+                android:drawablePadding="5dp"
+                android:text="换个账号"
+                android:textColor="@color/color_3"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/aliAcount_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:text="解除绑定"
+                android:textColor="#d04c4c"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aliAcountInfo_binder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/aliAcount_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_border_ali_input"
+            android:paddingLeft="10dp"
+
+            android:text=""
+            android:textColor="@color/color_3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="真实姓名"
+            android:textColor="@color/color_65"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/aliAuther_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_border_ali_input"
+            android:paddingLeft="10dp"
+
+            android:text=""
+            android:textColor="@color/color_3" />
+
+        <TextView
+            android:id="@+id/aliAuther_bind_commmit"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/color_a5c3eb"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+</LinearLayout>

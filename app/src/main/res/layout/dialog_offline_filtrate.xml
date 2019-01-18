@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#7effffff"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E5E5E5"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="开班时间"
+                    android:textColor="@color/color_3"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="(以月为单位)"
+                    android:textColor="#888"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/time_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_filtrate_dialog_unpress"
+                    android:onClick="TimeClick"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="本月内"
+                    android:textColor="#656565"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/time_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_filtrate_dialog_unpress"
+                    android:onClick="TimeClick"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="三月内"
+                    android:textColor="#656565"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/time_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_filtrate_dialog_unpress"
+                    android:onClick="TimeClick"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="六月内"
+                    android:textColor="#656565"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/time_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_filtrate_dialog_unpress"
+                    android:onClick="TimeClick"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="不限"
+                    android:textColor="#656565"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="排序"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/live_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_filtrate_dialog_press"
+                    android:onClick="OrderClick"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="综合排序"
+                    android:textColor="#656565"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/live_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_filtrate_dialog_unpress"
+                    android:onClick="OrderClick"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="最新"
+                    android:textColor="#656565"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/live_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_filtrate_dialog_unpress"
+                    android:onClick="OrderClick"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="最热"
+                    android:textColor="#656565"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/live_pirce_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_filtrate_dialog_unpress"
+                    android:onClick="OrderClick"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="价格从高到低"
+                    android:textColor="#656565"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/live_pirce_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_filtrate_dialog_unpress"
+                    android:onClick="OrderClick"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="价格从低到高"
+                    android:textColor="#656565"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/sure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/shape_frame_theme"
+                    android:onClick="SureClick"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/sure"
+                    android:background="@drawable/shape_border_theme"
+                    android:onClick="SureClick"
+
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="7dp"
+                    android:text="重置"
+                    android:textColor="#656565"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/outView"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

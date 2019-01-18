@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#E3E3E3"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextureView
+                android:id="@+id/textureview_phone_live_play"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top_layout"
+        android:layout_marginTop="38dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_announce_layout"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/phone_live_lt_info_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:drawablePadding="6dp"
+                android:drawableRight="@mipmap/portrait_announce_ic"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF"
+                android:text="直播间公告"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginLeft="79dp"
+                android:visibility="visible"
+                android:id="@+id/iv_announce_new"
+                android:layout_marginTop="7dp"
+                android:src="@mipmap/notice_msg_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/rl_announce_layout"
+            android:id="@+id/tv_phone_live_user_count"
+            android:text="0"
+            style="@style/userCountTextViewTheme" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/bottom_bg"
+        android:id="@+id/rl_phone_live_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <ImageView
+            android:id="@+id/iv_phone_live_public_chat"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/push_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_phone_live_private_chat"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/push_private_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_phone_live_change_source"
+                android:layout_marginRight="9dp"
+                android:src="@mipmap/play_phone_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_phone_live_barrage"
+                android:layout_marginRight="9dp"
+                android:src="@mipmap/live_notice_barrage_nor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_phone_live_close"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/push_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/id_push_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!--私聊用户列表-->
+        <LinearLayout
+            android:id="@+id/id_private_chat_user_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#d8f8f8f8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:text="@string/push_private_list_tip"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/id_private_chat_user_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/private_close"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="#DDDDDD"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_private_chat_user_list"
+                android:layout_width="match_parent"
+                android:layout_height="262dp"
+                android:background="#e6FAFAFA"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+        </LinearLayout>
+
+        <!--私聊列表-->
+        <LinearLayout
+            android:id="@+id/id_private_chat_msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#d8f8f8f8">
+
+                <ImageView
+                    android:id="@+id/id_private_chat_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/private_back"/>
+
+                <TextView
+                    android:id="@+id/id_private_chat_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/id_private_chat_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/private_close"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="#DDDDDD"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_private_chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="#e6FAFAFA"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+        </LinearLayout>
+
+        <!--下面聊天区 android:layout_marginBottom="0dp" 解决显示问题 具体原因不详-->
+        <FrameLayout
+            android:id="@+id/id_private_chat_msg_mask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000">
+
+            <RelativeLayout
+                android:id="@+id/id_push_chat_layout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="0dp"
+                android:background="#4CABB3BD"
+                android:visibility="invisible">
+
+                <Button
+                    android:id="@+id/id_push_chat_send"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="58dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="11dp"
+                    android:background="@drawable/push_send_bg"
+                    android:text="@string/push_send"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toStartOf="@id/id_push_chat_send"
+                    android:background="@drawable/push_input_bg">
+
+                    <ImageView
+                        android:id="@+id/id_push_chat_emoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="9dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_marginTop="9dp"
+                        android:clickable="true"
+                        android:src="@drawable/push_chat_emoji_normal"/>
+
+                    <EditText
+                        android:id="@+id/id_push_chat_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toStartOf="@id/id_push_chat_emoji"
+                        android:background="@null"
+                        android:hint="@string/push_input_hint"
+                        android:imeOptions="flagNoExtractUi"
+                        android:textColorHint="#666666"
+                        android:textSize="14sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <GridView
+            android:id="@+id/id_push_emoji_grid"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:background="#f2efed"
+            android:numColumns="7"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!--聊天内容展示区-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/phone_live_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@id/id_push_bottom"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="13dp"
+        android:background="#00000000"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+    <!--遮罩层-->
+    <FrameLayout
+        android:id="@+id/id_push_mask_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_push_bottom"
+        android:background="#00FFFFFF"
+        android:clickable="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

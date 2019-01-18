@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:maxHeight="290dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+
+
+    <!--android:background="@drawable/ground_10"-->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:gravity="center"
+            android:text="选择银行卡"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_background_color" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.jess.arms.widget.ListViewNoScroll
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/default_background_color" />
+
+                <RelativeLayout
+                    android:id="@+id/positive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/positiveButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_add_bank"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="添加新卡"
+                        android:textColor="#888"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

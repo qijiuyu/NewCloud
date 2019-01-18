@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.seition.cloud.pro.newcloud">
+
+    <!--    <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+        <uses-permission android:name="android.permission.CAMERA" />-->
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+    android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+    tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.seition.cloud.pro.newcloud.app.MApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/iccon"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/iccon"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeHasActionBar"
+        tools:replace="theme,label,icon">
+
+        <activity
+            android:name=".home.mvp.ui.main.activity.LauncherActivity"
+            android:theme="@style/AppThemeHasActionBar.NoBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+       autolayout meta
+       配置设计图的宽高,配合AutoLauout控件使用,在设计图尺寸以外的其它尺寸手机上,也能达到和设计图一样的效果
+       注意: 本框架并不强制你使用 AutoLayout,如果你不想使用 AutoLayout,就不要配置下面的 meta-data
+        -->
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
+        <!-- arms配置 -->
+        <meta-data
+            android:name="com.seition.cloud.pro.newcloud.app.GlobalConfiguration"
+            android:value="ConfigModule" />
+
+        <!--        <activity
+                    android:name=".home.mvp.ui.main.activity.HomeActivity"
+                    android:configChanges="orientation|screenSize|keyboardHidden"
+                    android:theme="@style/AppTheme" />-->
+
+        <activity
+            android:name=".home.mvp.ui.main2.activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <!--android:theme="@style/AppTheme"-->
+        <activity
+            android:name=".home.mvp.ui.login.activity.LoginActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104775295" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".home.mvp.ui.login.activity.PhoneRegisterActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.login.activity.GetPasswordPhoneActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.login.activity.GetPasswordEmailActivity"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name=".home.mvp.ui.login.activity.SetPasswordActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.login.activity.EmailRegisterActivity"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name=".home.mvp.ui.more.exam.activity.ExamActivity"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name=".home.mvp.ui.more.news.activity.NewsActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.more.news.activity.NewsDetailsActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.more.library.activity.ArticleLibraryListActivity"
+            android:hardwareAccelerated="true" />
+        <!--       <activity
+                   android:name=".home.mvp.ui.more.qa.activity.QuestionaskPublishActivity"
+                   android:hardwareAccelerated="true"
+                       />-->
+
+        <activity
+            android:name=".home.mvp.ui.more.group.activity.GroupActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.more.group.activity.GroupCreateActivity"
+            android:hardwareAccelerated="true"
+
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".home.mvp.ui.more.group.activity.GroupTopicListActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.more.group.activity.GroupDetailsActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.more.group.activity.GroupMemberListActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.more.group.activity.GroupOwnerActivity"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name=".home.mvp.ui.owner.message.activity.MessageActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.owner.message.activity.MessagePrivateActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.owner.message.activity.MessageCommentActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.owner.message.activity.MessageSystemActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.owner.message.activity.MessageChatActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.owner.WebActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.download.activity.DownloadActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.download.activity.CourseDownloadActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.more.exam.activity.ExamTypeListActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.more.exam.activity.ExaminationActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".home.mvp.ui.more.exam.activity.ExamResultActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.coupon.activity.SelectCouponMainActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".home.mvp.ui.buy.activity.EntityCardUseActivity"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name=".home.mvp.ui.owner.TestAcivity"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name=".home.mvp.ui.course.activity.CourseDetailsActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".home.mvp.ui.buy.activity.BuyActivity"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name=".home.mvp.ui.owner.bind.fragment.BindFaceChedkActivity"
+            android:hardwareAccelerated="true" />
+
+        <!--新浪微博三方-->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--微信第三方-->
+        <activity
+            android:name="com.seition.project.el3.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.seition.cloud.pro.newcloud.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.seition.cloud.pro.newcloud.wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.seition.project.el3.wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--QQ第三方-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- alipay sdk begin -->
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- alipay sdk end -->
+
+
+        <!--PhotoPicker-->
+
+    </application>
+
+</manifest>

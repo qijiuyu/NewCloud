@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/palylist"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.gensee.view.GSVideoView
+                android:id="@+id/gsvideoview"
+                android:layout_width="320dp"
+                android:layout_height="240dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/palynowtime"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00:00:00" />
+
+            <SeekBar
+                android:id="@+id/seekbarpalyviedo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/palyalltime"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00:00:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/pauseresumeplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_play" />
+
+            <Button
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="变速" />
+            <Button
+                android:id="@+id/stopveidoplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束" />
+
+            <Button
+                android:id="@+id/replayvedioplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新播放" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!--  
+            <com.gensee.pdu.GSDocView
+                android:id="@+id/palydoc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+                
+	    <com.gensee.view.GSDocViewGx
+	        android:id="@+id/playGlDocView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+	    </com.gensee.view.GSDocViewGx>
+
+            <Button
+                android:id="@+id/doc_list_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="章节列表" />
+
+            <ListView
+                android:id="@+id/doc_lv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/doc_list_btn" >
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.owner.OwnerUserInfoFragment">
+
+    <include layout="@layout/include_fragment_common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/upload_btn"
+                android:layout_width="@dimen/dp_75"
+                android:layout_height="@dimen/dp_75"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_25"
+                android:clickable="true">
+                <!--com.seition.cloud.pro.newcloud.widget.CustomShape-->
+                <ImageView
+                    android:id="@+id/user_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View style="@style/line_view_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/nicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="start"
+                android:text="@string/uname_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:background="@null"
+                android:editable="true"
+                android:enabled="true"
+                android:inputType="text"
+                android:maxLength="16"
+                android:textColor="@color/color_a5"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <View style="@style/line_view_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/system_msg_blcok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/xingbie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <RadioGroup
+                android:id="@+id/sex_readio"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/man_txt"
+                    android:textColor="@color/color_a5"
+                    android:textSize="@dimen/sp_15" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/woman_txt"
+                    android:textColor="@color/color_a5"
+                    android:textSize="@dimen/sp_15" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View style="@style/line_view_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+
+            <EditText
+                android:id="@+id/personal_signature"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_173"
+                android:background="@null"
+                android:gravity="left|top"
+                android:hint="@string/input_individual_resume"
+                android:inputType="textMultiLine"
+                android:maxLength="50"
+                android:scrollbars="vertical"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/input_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/dp_120"
+                android:gravity="right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

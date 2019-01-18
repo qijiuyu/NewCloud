@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55333333"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="288dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="335dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="2015《申论》真题"
+            android:textColor="@color/color_3"
+            android:textSize="18sp" />
+
+        <View style="@style/line_view_horizontal" />
+
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="147dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="11dp"
+            android:layout_marginTop="11dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="题数"
+                    android:textColor="@color/color_9e"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/question_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="1题"
+                    android:textColor="@color/color_3"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/line_view_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="总分"
+                    android:textColor="@color/color_9e"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="100分"
+                    android:textColor="@color/color_3"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/line_view_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="考试时间"
+                    android:textColor="@color/color_9e"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/exam_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="180分钟"
+                    android:textColor="@color/color_3"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="练习模式"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/exam"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_f76c59"
+                android:gravity="center"
+                android:text="考试模式"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

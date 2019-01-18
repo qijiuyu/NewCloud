@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.owner.message.activity.MessageChatActivity">
+
+    <include layout="@layout/include_common_title" />
+
+    <include
+        layout="@layout/include_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/color_c4" />
+
+    <LinearLayout
+        android:id="@+id/send_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_49"
+
+        android:background="@color/color_f5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_6">
+
+        <!--<ImageView
+            android:id="@+id/smile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@mipmap/biaoqing" />-->
+
+        <!--<EditText
+            android:id="@+id/et_msg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_private_letter_send_edt"
+            android:hint="说点什么吧..."
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/color_c4" />-->
+        <ImageView
+            android:id="@+id/changimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/face_bar" />
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/roundbackground_gray"
+            android:imeOptions="actionSend"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:gravity="center_vertical"
+            android:maxLines="10"
+            android:minHeight="30dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            style="@style/ThemeEditText"
+            android:textSize="14sp">
+        </EditText>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="54dp"
+                android:layout_height="35dp"
+                android:background="@drawable/shape_private_letter_send_btn"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.seition.cloud.pro.newcloud.widget.ListFaceView
+        android:id="@+id/face_view"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:tag="ture"
+        android:visibility="gone" />
+
+    <com.seition.cloud.pro.newcloud.widget.emoji.FaceLayout
+        android:id="@+id/faceView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:tag="ture"
+        android:visibility="gone" />
+</LinearLayout>

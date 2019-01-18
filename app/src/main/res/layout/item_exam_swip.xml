@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/exam_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2233"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/exam_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exam_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:tag="Hover"
+            android:text="2233"
+            android:textColor="@color/color_9e"
+            android:textSize="@dimen/sp_13" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <!--android:background="@mipmap/undown"-->
+            <ImageView
+                android:id="@+id/exam_statue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/undown"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/exam_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="Hover"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

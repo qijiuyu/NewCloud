@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/default_background"
+    android:orientation="vertical">
+
+    <com.yanzhenjie.sofia.StatusView
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--android:paddingTop="@dimen/activity_top_padding"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/find"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_17" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_news"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawableLeft="@mipmap/faxian_zixun"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/information" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            style="@style/line_view_horizontal"
+            android:layout_marginLeft="17dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mall"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawableLeft="@mipmap/faxian_mall"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/shopping_mall" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+
+        </RelativeLayout>
+
+        <!--<View style="@style/line_view_horizontal" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_online_test"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawableLeft="@mipmap/faxian_kaoshi"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/more_test" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            style="@style/line_view_horizontal"
+            android:layout_marginLeft="17dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_library"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawableLeft="@mipmap/faxian_article"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/more_library" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <!--<View style="@style/line_view_horizontal" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_qa"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawableLeft="@mipmap/faxian_question"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/more_qa" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            style="@style/line_view_horizontal"
+            android:visibility="gone"
+            android:layout_marginLeft="17dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_group"
+            android:visibility="gone"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawableLeft="@mipmap/faxian_team"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="@string/more_group" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <!--<View style="@style/line_view_horizontal" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_test"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawableLeft="@mipmap/faxian_team"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="测试" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            style="@style/line_view_horizontal"
+            android:layout_marginLeft="17dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_test2"
+            style="@style/more_item_relative_style">
+
+            <TextView
+                style="@style/more_item_title_style"
+                android:drawableLeft="@mipmap/faxian_team"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="情况下载列表及数据库" />
+
+            <TextView
+                style="@style/more_style"
+                android:text="" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

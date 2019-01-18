@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jess.arms.widget.statue.SimpleMultiStateView
+        android:id="@+id/multistateview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <!--<include layout="@layout/include_springview_recyclerview"/>-->
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/springview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:type="follow">
+
+            <include layout="@layout/include_recyclerview" />
+        </com.liaoinstan.springview.widget.SpringView>
+    </com.jess.arms.widget.statue.SimpleMultiStateView>
+</FrameLayout>

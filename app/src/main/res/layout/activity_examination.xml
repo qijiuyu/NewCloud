@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.more.exam.activity.ExaminationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_common_title" />
+
+        <include layout="@layout/include_springview_recyclerview" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pause"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66666666"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_exam_pause"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:text="继续"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/shape_exam_pause"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:text="退出"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20" />
+    </LinearLayout>
+
+
+</FrameLayout>

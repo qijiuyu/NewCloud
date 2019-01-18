@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_18">
+
+
+    <TextView
+        android:id="@+id/toolbar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_35"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ic_arrow_back" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_toLeftOf="@id/search"
+        android:layout_toRightOf="@id/toolbar_back"
+        android:background="@drawable/shape_oval_white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_search_question"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:hint="@string/search_qa"
+            android:inputType="none"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/color_9e"
+            android:textSize="@dimen/sp_14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_8"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/dp_0_5"
+                android:layout_height="match_parent"
+                android:background="@color/color_9e" />
+
+            <TextView
+                android:id="@+id/askAquestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:text="提问"
+                android:textColor="@color/color_9e"
+                android:textSize="@dimen/sp_14"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/ic_filtrate"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_5"
+        android:text="@string/search"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

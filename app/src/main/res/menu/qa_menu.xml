@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     >
+    <item
+        android:id="@+id/qa_publish"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:visible="true"
+        android:icon="@mipmap/ic_share"
+        android:title=""
+        />
+    <item
+        android:id="@+id/qa_classify"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:visible="true"
+        android:icon="@mipmap/ic_share"
+        android:title=""
+        />
+</menu>

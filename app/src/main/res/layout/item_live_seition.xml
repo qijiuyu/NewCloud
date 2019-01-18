@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingRight="@dimen/dp_15"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_live_seitin_item_num_background"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_11" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="@dimen/dp_10"
+            android:singleLine="true"
+            android:textColor="@color/item_title_color"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/is_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@drawable/shape_course_buy_frame"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingLeft="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_4"
+            android:paddingTop="@dimen/dp_2"
+            android:text="已购买"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@drawable/shape_course_price_frame"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingLeft="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_4"
+            android:paddingTop="@dimen/dp_2"
+            android:text=""
+            android:textColor="@color/price_red_color"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/zhibo_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_5"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <View style="@style/line_view_horizontal" />
+</LinearLayout>

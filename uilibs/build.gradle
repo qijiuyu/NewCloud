@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+        ndk {
+            abiFilters('armeabi-v7a')
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+//    api "com.github.bumptech.glide:glide:${GLIDE_VERSION}"
+    api(rootProject.ext.dependencies["socket-client"]) {
+        exclude group: 'org.json', module: 'json'
+    }
+    api(rootProject.ext.dependencies["glide"]) {
+        exclude module: 'support-v4'
+    }
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.6.4'
+    implementation 'com.github.ctiao:ndkbitmap-armv7a:0.6.4'
+    implementation 'com.github.ctiao:ndkbitmap-armv5:0.6.4'
+    implementation 'com.github.ctiao:ndkbitmap-x86:0.6.4'
+
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:orientation="vertical">
+
+    <com.seition.cloud.pro.newcloud.widget.DownProgressView
+        android:id="@+id/download_progress"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25"
+        android:visibility="gone"
+        app:civ_border_color="@color/color_e5"
+        app:civ_border_width="@dimen/dp_1" />
+
+    <TextView
+        android:id="@+id/download"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_24"
+        android:background="@drawable/shape_library_button_style"
+        android:gravity="center"
+        android:textColor="@color/color_9e"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+</LinearLayout>

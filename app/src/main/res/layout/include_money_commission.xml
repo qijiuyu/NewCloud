@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/price_symbol"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/price_symbol"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_25" />
+
+        <EditText
+            android:id="@+id/money_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_12"
+            android:textColor="@color/color_f65549"
+            android:textSize="@dimen/sp_25" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_gravity="center"
+        android:background="@color/color_8" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_12"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/add_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getting_data"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/commission_get_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commission_withdraw_all"
+            android:textColor="@color/color_13407e"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+</LinearLayout>

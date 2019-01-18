@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    defaultConfig {
+//        applicationId "com.vhall.live"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode 301
+        versionName "3.0.1"
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+    }
+
+//    packagingOptions {
+//        exclude 'META-INF/beans.xml'
+//    }
+
+    repositories {
+        flatDir {
+            dirs project(':uilibs').file('libs')
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':uilibs')
+    api(rootProject.ext.dependencies["glide"]) {
+        exclude module: 'support-v4'
+    }
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+}

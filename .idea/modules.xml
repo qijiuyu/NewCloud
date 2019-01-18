@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NewCloud.iml" filepath="$PROJECT_DIR$/NewCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arms/arms.iml" filepath="$PROJECT_DIR$/arms/arms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cc-small/cc-small.iml" filepath="$PROJECT_DIR$/cc-small/cc-small.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cc-small-library/cc-small-library.iml" filepath="$PROJECT_DIR$/cc-small-library/cc-small-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cc-small-scan-library/cc-small-scan-library.iml" filepath="$PROJECT_DIR$/cc-small-scan-library/cc-small-scan-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cclive/cclive.iml" filepath="$PROJECT_DIR$/cclive/cclive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faceplatform-ui/faceplatform-ui.iml" filepath="$PROJECT_DIR$/faceplatform-ui/faceplatform-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagepicker/imagepicker.iml" filepath="$PROJECT_DIR$/imagepicker/imagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liveplayer/liveplayer.iml" filepath="$PROJECT_DIR$/liveplayer/liveplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay/pay.iml" filepath="$PROJECT_DIR$/pay/pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uilibs/uilibs.iml" filepath="$PROJECT_DIR$/uilibs/uilibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umengutils/umengutils.iml" filepath="$PROJECT_DIR$/umengutils/umengutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vhutils/vhutils.iml" filepath="$PROJECT_DIR$/vhutils/vhutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vitamio/vitamio.iml" filepath="$PROJECT_DIR$/vitamio/vitamio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zshdlib/zshdlib.iml" filepath="$PROJECT_DIR$/zshdlib/zshdlib.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+//        applicationId "com.bokecc.dwlivedemo_new"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi-v7a'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestImplementation rootProject.ext.dependencies["espresso-core"]
+    implementation rootProject.ext.dependencies["design"]
+    annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
+        exclude module: 'support-annotations'
+    }
+    testImplementation rootProject.ext.dependencies["junit"]
+    // bugly
+//    implementation 'com.tencent.bugly:2.6.6.1'
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+//    implementation 'com.tencent.bugly:3.3.1'
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    // CC
+    implementation(rootProject.ext.dependencies["socket-client"]) {
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation project(':arms')
+}

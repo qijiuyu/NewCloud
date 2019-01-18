@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_1"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/seition_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxWidth="200dp"
+        android:singleLine="true"
+        android:text="title"
+        android:textColor="@color/item_title_color"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/is_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginStart="@dimen/dp_10"
+        android:background="@drawable/shape_course_free_frame"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_2"
+        android:text="免费"
+        android:textColor="@color/price_green_color"
+        android:textSize="@dimen/sp_10"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/is_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginStart="@dimen/dp_10"
+        android:background="@drawable/shape_course_buy_frame"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_2"
+        android:text="已购买"
+        android:textColor="@color/color_8"
+        android:textSize="@dimen/sp_10"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginStart="@dimen/dp_10"
+        android:background="@drawable/shape_course_price_frame"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_2"
+        android:text=""
+        android:textColor="@color/price_red_color"
+        android:textSize="@dimen/sp_10"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/video_time_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="@color/item_item_color"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/is_audition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:background="@drawable/shape_course_free_frame"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_2"
+        android:text="试听"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_10"
+        android:visibility="gone" />
+</LinearLayout>

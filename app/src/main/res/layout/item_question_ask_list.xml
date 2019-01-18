@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/qa_cover"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="@dimen/dp_35" />
+
+            <TextView
+                android:id="@+id/qa_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text=""
+                android:textColor="@color/color_6"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/qa_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dp_12"
+            android:maxLines="3"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/sp_14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/qa_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_6"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/qa_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ic_browse"
+                android:drawablePadding="@dimen/dp_4"
+                android:textColor="@color/color_6"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/qa_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_toLeftOf="@id/qa_zan"
+                android:drawableLeft="@drawable/ic_qa_commit_count"
+                android:drawablePadding="@dimen/dp_4"
+                android:textColor="@color/color_6"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.organization.fragment.OrganizationOwnerFragment">
+
+    <include layout="@layout/include_fragment_common_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_school"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_school_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_47"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_17"
+            android:paddingRight="@dimen/dp_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/org_home"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="我的主页"
+                android:textColor="@color/color_4"
+                android:textSize="@dimen/sp_16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dp_17"
+            android:background="#efeff4" />
+
+        <RelativeLayout
+            android:id="@+id/rl_school_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_47"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_17"
+            android:paddingRight="@dimen/dp_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/org_order"
+                android:drawablePadding="@dimen/dp_15"
+                android:text="我的订单"
+                android:textColor="@color/color_4"
+                android:textSize="@dimen/sp_16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_next" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_probar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:text="正在获取机构信息\n请稍后..."
+            android:textColor="@color/color_50"
+            android:textSize="@dimen/sp_22" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/organization_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="还不是机构\n点击申请成为机构吧~"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_24" />
+    </RelativeLayout>
+</LinearLayout>

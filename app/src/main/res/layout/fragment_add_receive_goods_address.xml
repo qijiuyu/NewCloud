@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E8EE"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_fragment_common_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_border_oval"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/receive_people"
+                android:textColor="@color/color_6"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/receive_people_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/name_txt"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:textColor="@color/color_9"
+                android:textColorHint="@color/color_80"
+                android:textSize="16sp" />
+
+
+
+        </RelativeLayout>
+
+        <!--android:background="@mipmap/input_edit_bg"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_border_oval"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/receive_phone"
+                android:textColor="@color/color_6"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/receive_phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:textColor="@color/color_9"
+                android:textColorHint="@color/color_80"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <!--android:background="@mipmap/input_edit_bg"-->
+        <LinearLayout
+            android:id="@+id/select_receive_address_area_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_border_oval"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="@string/receive_area"
+                android:textColor="@color/color_6"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/receive_area_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:text="省份 城市 县区"
+                android:textSize="16sp"
+                android:longClickable="false"
+                android:textColor="@color/color_9"
+                />
+        </LinearLayout>
+
+        <!--android:background="@mipmap/input_edit_bg"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_border_oval"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="@string/receive_address"
+                android:textColor="@color/color_6"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/receive_address_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="top"
+                android:textColor="@color/color_9"
+                android:textColorHint="@color/color_80"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+        <!--android:button="@drawable/checkbox"-->
+        <CheckBox
+            android:id="@+id/agree_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/receive_set_default"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/color_6"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</LinearLayout>

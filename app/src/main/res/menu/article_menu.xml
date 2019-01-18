@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     >
+    <item
+        android:id="@+id/article_cate"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:visible="true"
+        android:icon="@drawable/ic_classify"
+        android:title="分类"
+        />
+
+</menu>

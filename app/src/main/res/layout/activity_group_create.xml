@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/default_background"
+    android:orientation="vertical"
+    tools:context=".home.mvp.ui.more.group.activity.GroupCreateActivity">
+
+    <include layout="@layout/include_common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/group_cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_frame"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dp_8"
+                android:padding="@dimen/dp_30">
+
+
+                <TextView
+                    android:id="@+id/group_cover_select"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/ic_add"
+                    android:text="@string/add_group_face"
+                    android:textColor="@color/color_8"
+                    android:textSize="@dimen/sp_18" />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="@dimen/dp_8"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_3"
+                    android:text="名称:"
+                    />
+                <EditText
+                    android:id="@+id/group_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="请输入小组名称"
+                    android:textSize="@dimen/sp_14"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:background="@color/color_8"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="@dimen/dp_8"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_3"
+                    android:text="分类:"
+                    />
+                <TextView
+                    android:id="@+id/group_classify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请选择"
+                    android:textSize="@dimen/sp_14"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:background="@color/color_8"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_8"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_3"
+                    android:text="简介:"
+                    />
+                <EditText
+                    android:id="@+id/group_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:padding="@dimen/dp_2"
+
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/group_info"
+                    android:textSize="@dimen/sp_14"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:background="@color/color_8"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_8"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_3"
+                    android:text="公告:"
+                    />
+                <EditText
+                    android:id="@+id/group_announcement"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:padding="@dimen/dp_2"
+                    android:background="@null"
+                    android:hint="@string/group_announcement"
+                    android:gravity="top"
+                    android:textSize="@dimen/sp_14"
+                    />
+            </LinearLayout>
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/dp_0_5"-->
+                <!--android:background="@color/color_8"/>-->
+
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/text_input_layout_style"-->
+                <!--android:layout_margin="@dimen/dp_8">-->
+
+                <!--<AutoCompleteTextView-->
+                   <!---->
+                    <!--style="@style/edittext_textview_style"-->
+                    <!--android:hint="@string/group_name"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:inputType="textAutoComplete"-->
+                    <!--android:nextFocusForward="@+id/group_classify" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/text_input_layout_style"-->
+                <!--android:layout_margin="@dimen/dp_8">-->
+
+                <!--<AutoCompleteTextView-->
+                    <!---->
+                    <!--style="@style/edittext_textview_style"-->
+                    <!--android:hint="@string/group_classify"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:inputType="textAutoComplete"-->
+                    <!--android:nextFocusForward="@+id/group_info" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/text_input_layout_style"-->
+                <!--android:layout_height="@dimen/dp_100"-->
+                <!--android:layout_margin="@dimen/dp_8">-->
+
+                <!--<AutoCompleteTextView-->
+                    <!---->
+                    <!--style="@style/edittext_textview_style"-->
+                    <!--android:layout_gravity="start"-->
+                    <!--android:hint="@string/group_info"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:inputType="textAutoComplete"-->
+                    <!--android:maxLength="80"-->
+                    <!--android:nextFocusForward="@+id/group_announcement"-->
+                    <!--android:textSize="@dimen/sp_15" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/text_input_layout_style"-->
+                <!--android:layout_height="@dimen/dp_100"-->
+                <!--android:layout_margin="@dimen/dp_8">-->
+
+                <!--<AutoCompleteTextView-->
+                    <!---->
+                    <!--style="@style/edittext_textview_style"-->
+                    <!--android:layout_gravity="start"-->
+                    <!--android:hint="@string/group_announcement"-->
+                    <!--android:imeOptions="actionDone"-->
+                    <!--android:inputType="textAutoComplete"-->
+                    <!--android:maxLength="80"-->
+                    <!--android:textSize="@dimen/sp_15" />-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        ndk {
+            abiFilters('armeabi-v7a')
+        }
+    }
+/*    compileSdkVersion 25
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }*/
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api(name:'faceplatform-release', ext:'aar')
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+//    compile files('libs/facesdk.jar')
+//    compile files('libs/idl-license.jar')
+}

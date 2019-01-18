@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gensee.rtmpresourcelib"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application android:allowBackup="true">
+        <activity
+            android:name="com.gensee.MyZhiBoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />
+        <!-- 展示互动点播（回放）-->
+        <activity
+            android:name="com.gensee.PlayActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>

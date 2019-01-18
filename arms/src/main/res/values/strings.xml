@@ -1,0 +1,10 @@
+<resources>
+    <!-- 状态视图  -->
+    <string name="loading">加载中...</string>
+    <string name="text_empty">还没有数据呢！</string>
+    <string name="text_nonet">网络异常！</string>
+    <string name="text_retry">点击重试</string>
+
+    <string name="expand_string">展开</string>
+    <string name="collapsed_string">收起</string>
+</resources>

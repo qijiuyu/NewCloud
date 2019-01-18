@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bokecc.dwlivedemo_new.activity.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout android:id="@+id/toolbar"
+            app:layout_scrollFlags="enterAlways"
+            android:layout_width="match_parent"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:src="@mipmap/nav_ic_back_nor"
+                style="@style/baseTitleImageTheme" />
+
+            <RelativeLayout
+                android:id="@+id/rl_na_title"
+                style="@style/baseTitleImageTheme"
+                android:layout_centerInParent="true" >
+                <TextView
+                    android:text="我要直播"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_nav_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/iv_nav_cbb"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_nav_title"
+                    android:src="@mipmap/nav_ic_cbb_nor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/nav_ic_code"
+                style="@style/baseTitleImageTheme" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        app:layout_scrollFlags="enterAlways"
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</LinearLayout>

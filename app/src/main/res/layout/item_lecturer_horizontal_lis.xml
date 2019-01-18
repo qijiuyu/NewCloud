@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+
+
+    <!--<com.seition.cloud.pro.newcloud.widget.CustomShapeImageView-->
+    <ImageView
+        android:id="@+id/lecture_cover"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/lecture_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="英语"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/sp_14"
+         />
+
+</LinearLayout>

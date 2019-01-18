@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pc_portrait_layout"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/rl_portrait_live_top_layout"
+        android:background="@drawable/living_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_portrait_live_close"
+                android:src="@mipmap/title_back"
+                android:paddingRight="5dp"
+                style="@style/phoneLiveLandscapeTitleViewTheme" />
+
+            <TextView
+                android:id="@+id/tv_portrait_live_title"
+                android:paddingLeft="0dp"
+                android:text="直播间标题"
+                style="@style/phoneLiveLandscapeTitleViewTheme" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginRight="5dp"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="公告"
+                    android:paddingRight="0dp"
+                    android:id="@+id/tv_portrait_live_announce"
+                    style="@style/phoneLiveLandscapeTitleViewTheme" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/iv_portrait_announce_new"
+                    android:layout_marginTop="14dp"
+                    android:layout_toEndOf="@+id/tv_portrait_live_announce"
+                    android:src="@mipmap/notice_msg_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_portrait_live_right_layout"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/iv_portrait_live_change_audio_video"
+            android:src="@mipmap/video_ic_live_nor"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_portrait_live_barrage"
+            android:src="@mipmap/video_ic_barrage_nor"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_portrait_live_full"
+            android:src="@mipmap/video_ic_full_nor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_portrait_live_left_layout"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_portrait_live_rtc"
+            android:src="@mipmap/video_ic_lianmai_nor"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_portrait_live_change_line"
+            android:src="@mipmap/video_ic_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_portrait_live_user_count"
+        style="@style/userCountTextViewTheme"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:text="0" />
+
+</RelativeLayout>

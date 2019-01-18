@@ -1,0 +1,183 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'dexknifePlus'
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexKnife {
+        //必选参数
+        enabled true //if false,禁用分包插件
+        //可选参数
+        //1.如果没有可选参数，将根据enabled决定是否分包。
+        //2.如果有可选参数，需满足必选参数和可选参数的条件才允许分包
+        productFlavor 'mock'
+        buildType 'debug'
+
+        /*
+        *eg:当前productFlavors = dev，buildType = debug，
+        *参数组合1：enabled = true，productFlavor = dev，buildType = debug 分包
+        *参数组合2：enabled = true，productFlavor = mock，buildType = debug 不分包
+        *参数组合1：enabled = true，buildType = debug 所有buildType = debug分包
+        *参数组合1：enabled = true，productFlavor = dev 所有productFlavor = dev分包
+        * */
+    }
+
+    greendao {
+        schemaVersion 12
+//        daoPackage 'com.seition.cloud.pro.newcloud.app.gen'//生成DaoMaster类文件夹
+        daoPackage 'com.seition.project.el3.app.gen'//生成DaoMaster类文件夹
+        targetGenDir 'src/main/java'//生成DaoMaster类包名
+    }
+
+    defaultConfig {
+//        applicationId "com.seition.cloud.pro.newcloud"
+        applicationId "com.seition.project.el3"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        ndk {
+            abiFilters('armeabi-v7a')
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/beans.xml'
+
+        //ccLive
+//        exclude "lib/armeabi-v7a/libRSSupport.so"
+//        exclude "lib/mips/libRSSupport.so"
+//        exclude "lib/x86_64/libRSSupport.so"
+//        exclude "lib/x86/libRSSupport.so"
+//        exclude "lib/arm64-v8a/libRSSupport.so"
+//
+//        exclude "lib/arm64-v8a/librsjni.so"
+//        exclude "lib/mips/librsjni.so"
+//        exclude "lib/x86/librsjni.so"
+//        exclude "lib/x86_64/librsjni.so"
+//        exclude "lib/armeabi-v7a/librsjni.so"
+    }
+    dexOptions {
+        javaMaxHeapSize "8g"
+    }
+
+    signingConfigs {
+        key {
+            keyAlias 'NewCloud'
+            keyPassword '123456'
+            storeFile file('NewCloud.jks')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.key
+        }
+
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled false
+//            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.key
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        disable "ResourceType"
+        abortOnError false
+    }
+
+    repositories {
+        flatDir {
+//            dirs project(':uilibs').file('libs')
+            dirs project(':faceplatform-ui').file('libs')
+            dirs project(':pay').file('libs')
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation project(':arms')
+    implementation project(':vitamio')
+    implementation project(':umengutils')
+    api project(':liveplayer')
+    implementation project(':faceplatform-ui')
+    implementation project(':pay')
+    //    implementation rootProject.ext.dependencies["appcompat-v7"]
+    testImplementation rootProject.ext.dependencies["junit"]
+    //    implementation rootProject.ext.dependencies["banner-core"]
+    implementation rootProject.ext.dependencies["PermissionsDispatcher"]
+    annotationProcessor rootProject.ext.dependencies["PermissionsDispatcher-processor"]
+    implementation rootProject.ext.dependencies["BaseAdapterHelper"]
+    androidTestImplementation rootProject.ext.dependencies["runner"]
+    //    androidTestImplementation rootProject.ext.dependencies["espresso-core"]
+    implementation rootProject.ext.dependencies["WxPay"]
+    //support
+    implementation(rootProject.ext.dependencies["cardview-v7"]) {
+        exclude module: 'support-annotations'
+    }
+    //network
+    implementation rootProject.ext.dependencies["retrofit-url-manager"]
+    implementation(rootProject.ext.dependencies["retrofit-adapter-rxjava"]) {
+        exclude module: 'rxjava'
+        exclude module: 'okhttp'
+        exclude module: 'retrofit'
+        exclude module: 'okio'
+    }
+    //tools
+    //    implementation rootProject.ext.dependencies["dagger2"]
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    implementation rootProject.ext.dependencies["progressmanager"]
+    implementation rootProject.ext.dependencies["lifecyclemodel"]
+    //view
+    //    implementation(rootProject.ext.dependencies["butterknife"]) {
+    //        exclude module: 'support-annotations'
+    //    }
+    annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
+        exclude module: 'support-annotations'
+    }
+    implementation rootProject.ext.dependencies["paginate"]
+    //Github 仓库上最新的 Demo 具有下一个版本的新特性, 所以依赖最新的远程库会出现版本不兼容的情况, 详情请查看 https://github.com/JessYanCoding/MVPArms/wiki/Issues#2
+    //    implementation 'me.jessyan:arms:2.3.6'
+    //test
+    debugImplementation rootProject.ext.dependencies["canary-debug"]
+    releaseImplementation rootProject.ext.dependencies["canary-release"]
+    testImplementation rootProject.ext.dependencies["canary-release"]
+    //greendao依赖
+    implementation 'org.greenrobot:greendao:3.2.0'
+    implementation 'org.greenrobot:greendao-generator:3.2.0'
+    implementation 'com.trello:rxlifecycle:0.6.1'
+    implementation 'com.trello:rxlifecycle-components:0.6.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.liulishuo.filedownloader:library:1.7.2'
+    //by "https://github.com/lingochamp/FileDownloader/blob/master/README-zh.md"
+    configurations.all {
+        resolutionStrategy.force rootProject.ext.dependencies["rxandroid"]
+    }
+}

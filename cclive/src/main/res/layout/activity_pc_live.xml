@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pc_live_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#E3E3E3"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_pc_live_top_layout"
+        android:background="#000000"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextureView
+            android:id="@+id/textureview_pc_live_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/svr_remote_render"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/svr_local_render"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="100dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="100dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sound_layout"
+            android:background="#000000"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_sound"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/video_img_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/iv_sound"
+                android:text="音频模式"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#80FFFFFF"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <com.bokecc.dwlivedemo_new.view.BarrageLayout
+            android:id="@+id/bl_pc_barrage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.bokecc.dwlivedemo_new.view.BarrageLayout>
+
+        <TextView
+            android:id="@+id/tv_living"
+            android:visibility="gone"
+            android:background="@drawable/pc_liveing_bg"
+            android:drawablePadding="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="22dp"
+            android:layout_alignParentRight="true"
+            android:text="直播中"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@mipmap/nav_msg_living"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/pc_live_top_living_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/live_pc_portrait_play_layout" />
+
+        <include layout="@layout/live_pc_landscape_layout" />
+
+        <TextView
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"
+            android:text="直播尚未开始"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_pc_portrait_prepare" />
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyleLarge"
+            android:indeterminateTint="#99FFFFFF"
+            android:indeterminateTintMode="src_atop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/pc_portrait_progressBar" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:background="#FFFFFF"
+        android:id="@+id/pc_live_infos_layout"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <include layout="@layout/live_pc_portrait_msg_layout" />
+
+    </RelativeLayout>
+
+</LinearLayout>
