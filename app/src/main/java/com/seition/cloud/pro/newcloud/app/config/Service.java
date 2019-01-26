@@ -8,7 +8,7 @@ public class Service {
     private static final String Http = "http://";
     private static final String Https = "https://";
 //    public static final String DOMAIN = Https + "t.v4.51eduline.com";//多机构测试
-    public static final String DOMAIN = Http + "video.longmishu.com/";//多机构正式
+    public static final String DOMAIN = Http + "wert.51huaqi.cn/";//多机构正式
 //    public static final String DOMAIN = Https + "single.51eduline.com";//单机构测试
 //    public static final String DOMAIN = Https + "demo.51eduline.com";//单机构正式
     public static final String DOMAIN_NAME = DOMAIN + "/service/";
