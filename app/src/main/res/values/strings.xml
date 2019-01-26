@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">宇凰在线</string>
-    <string name="procotol_name">Eduline购买协议</string>
-    <string name="procotol">我同意《Eduline协议》</string>
-    <string name="procotol2">《Eduline协议》</string>
-    <string name="procotol6">《Eduline在线退款服务协议》</string>
-    <string name="procotol4">请同意《Eduline注册协议》！</string>
-    <string name="procotol3">请先阅读《Eduline购买协议》并同意该协议</string>
-    <string name="procotol5">请同意Eduline在线退款服务协议才能退款！</string>
-    <string name="procotol_buy">《Eduline购买协议》</string>
-    <string name="start_app">开启我的Eduline</string>
-    <string name="cache_file_name">Eduline</string>
+    <string name="app_name">龙秘书</string>
+    <string name="procotol_name">购买协议</string>
+    <string name="procotol">我同意《平台使用协议》</string>
+    <string name="procotol2">《平台使用协议》</string>
+    <string name="procotol6">《在线退款服务协议》</string>
+    <string name="procotol4">请同意《注册协议》！</string>
+    <string name="procotol3">请先阅读《购买协议》并同意该协议</string>
+    <string name="procotol5">请同意在线退款服务协议才能退款！</string>
+    <string name="procotol_buy">《购买协议》</string>
+    <string name="start_app">开启我的</string>
+    <string name="cache_file_name"></string>
     <string name="consent">我已阅读并同意</string>
     <string name="number">数量</string>
     <string name="info">简介</string>

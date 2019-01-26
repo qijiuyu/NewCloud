@@ -9,7 +9,7 @@ package com.seition.cloud.pro.newcloud.app.config;
 public class MyConfig {
 
     // APP_ID 替换为你的应用从官方网站申请到的合法appId
-    public static final String APP_ID = "wxbbb961a0b0bf577a";
+    public static final String APP_ID = "wxbd94feaa60ff4345";
     public static int no_read_message;// 未读私信数量
     public static int no_read_comment;// 未读评论数量
     public static int no_read_notify;// 未读系统消息数量
