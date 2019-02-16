@@ -37,8 +37,8 @@ android {
     }
 
     defaultConfig {
-//        applicationId "com.seition.cloud.pro.newcloud"
-        applicationId "com.seition.project.el3"
+        applicationId "com.seition.cloud.pro.newcloud"
+//        applicationId "com.seition.project.el3"
         minSdkVersion rootProject.ext.android["minSdkVersion"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
         versionCode rootProject.ext.android["versionCode"]
@@ -77,7 +77,7 @@ android {
     }
 
     signingConfigs {
-        key {
+        keyConfig {
             keyAlias 'NewCloud'
             keyPassword '123456'
             storeFile file('NewCloud.jks')
@@ -91,7 +91,7 @@ android {
             buildConfigField "boolean", "USE_CANARY", "true"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.key
+            signingConfig signingConfigs.keyConfig
         }
 
         release {
@@ -101,7 +101,7 @@ android {
 //            shrinkResources true
             zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.key
+            signingConfig signingConfigs.keyConfig
         }
     }
 
